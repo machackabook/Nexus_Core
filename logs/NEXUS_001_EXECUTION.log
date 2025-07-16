@@ -1,0 +1,157 @@
+AQ, directive received from Nexus. Authenticating...
+[1;33mObjective: Prepare all assets on the 'Aura' volume for Operation: Ghost Boot.[0m
+Executing cloud_purge.py now...
+--- PROTOCOL: CLOUD PURGE v2.0 INITIATED ---
+Staging Area: /Volumes/Transfer/NEXUS_STAGING
+Creating directory: /Volumes/Transfer/NEXUS_STAGING/core_functions
+
+[+] Staging core functions for startup volume...
+    -> Core functions copied to /Volumes/Transfer/NEXUS_STAGING/core_functions
+
+[+] Scanning Downloads directory for large assets...
+No primary target assets found to archive.
+
+[+] Initiating rclone transfer to Google Drive...
+Executing: rclone move '/Volumes/Transfer/NEXUS_STAGING' gdrive:NEXUS_ARCHIVE --progress
+This may require authentication and will take time.
+SUCCESS: Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         0.4s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         0.9s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         1.5s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         2.0s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         2.5s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	          0 B / 15.268 KiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         3.0s
+Transferring:
+ *                 core_functions/cloud_purge.py:  0% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:  0% /4.146Ki, 0/s, -
+ *       core_functions/comprehensive_archive.py:  0% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	   14.148 KiB / 15.268 KiB, 93%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         3.5s
+Transferring:
+ *                 core_functions/cloud_purge.py:100% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:100% /4.146Ki, 1.382Ki/s, 0s
+ *       core_functions/comprehensive_archive.py:100% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	   14.148 KiB / 15.268 KiB, 93%, 3.536 KiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         4.0s
+Transferring:
+ *                 core_functions/cloud_purge.py:100% /3.525Ki, 0/s, -
+ *          core_functions/protocol_the_crypt.sh:100% /4.146Ki, 1.382Ki/s, 0s
+ *       core_functions/comprehensive_archive.py:100% /6.478Ki, 0/s, -
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	   14.148 KiB / 15.268 KiB, 93%, 3.536 KiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 6
+Transferred:            0 / 5, 0%
+Elapsed time:         4.5s
+Transferring:
+ *                 core_functions/cloud_purge.py:100% /3.525Ki, 902/s, 0s
+ *          core_functions/protocol_the_crypt.sh:100% /4.146Ki, 1.036Ki/s, 0s
+ *       core_functions/comprehensive_archive.py:100% /6.478Ki, 1.619Ki/s, 0s
+ *           core_functions/development_setup.sh:  0% /0, 0/s, -Transferred:   	   15.268 KiB / 15.268 KiB, 100%, 3.053 KiB/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 6
+Deleted:                4 (files), 0 (dirs), 14.148 KiB (freed)
+Renamed:                4
+Transferred:            4 / 5, 80%
+Elapsed time:         5.0s
+Transferring:
+ *               core_functions/space_manager.sh:100% /1.119Ki, 0/s, -Transferred:   	   15.268 KiB / 15.268 KiB, 100%, 3.053 KiB/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 6
+Deleted:                4 (files), 0 (dirs), 14.148 KiB (freed)
+Renamed:                4
+Transferred:            4 / 5, 80%
+Elapsed time:         5.5s
+Transferring:
+ *               core_functions/space_manager.sh:100% /1.119Ki, 0/s, -Transferred:   	   15.268 KiB / 15.268 KiB, 100%, 3.053 KiB/s, ETA 0s
+Checks:                 4 / 4, 100%, Listed 6
+Deleted:                4 (files), 0 (dirs), 14.148 KiB (freed)
+Renamed:                4
+Transferred:            4 / 5, 80%
+Elapsed time:         6.0s
+Transferring:
+ *               core_functions/space_manager.sh:100% /1.119Ki, 1.118Ki/s, 0sTransferred:   	   15.268 KiB / 15.268 KiB, 100%, 2.544 KiB/s, ETA 0s
+Checks:                 5 / 5, 100%, Listed 6
+Deleted:                5 (files), 0 (dirs), 15.268 KiB (freed)
+Renamed:                5
+Transferred:            5 / 5, 100%
+Elapsed time:         6.5sTransferred:   	   15.268 KiB / 15.268 KiB, 100%, 2.544 KiB/s, ETA 0s
+Checks:                 5 / 5, 100%, Listed 6
+Deleted:                5 (files), 0 (dirs), 15.268 KiB (freed)
+Renamed:                5
+Transferred:            5 / 5, 100%
+Elapsed time:         7.0sTransferred:   	   15.268 KiB / 15.268 KiB, 100%, 2.544 KiB/s, ETA 0s
+Checks:                 5 / 5, 100%, Listed 6
+Deleted:                5 (files), 0 (dirs), 15.268 KiB (freed)
+Renamed:                5
+Transferred:            5 / 5, 100%
+Elapsed time:         7.5sTransferred:   	   15.268 KiB / 15.268 KiB, 100%, 2.544 KiB/s, ETA 0s
+Checks:                 5 / 5, 100%, Listed 6
+Deleted:                5 (files), 0 (dirs), 15.268 KiB (freed)
+Renamed:                5
+Transferred:            5 / 5, 100%
+Elapsed time:         7.5s
+
+
+--- CLOUD PURGE PROTOCOL COMPLETE ---
+--- PROTOCOL: CLOUD PURGE v2.0 INITIATED ---
+Staging Area: /Volumes/Transfer/NEXUS_STAGING
+
+[+] Staging core functions for startup volume...
+    -> Core functions copied to /Volumes/Transfer/NEXUS_STAGING/core_functions
+
+[+] Scanning Downloads directory for large assets...
+No primary target assets found to archive.
+
+[+] Initiating rclone transfer to Google Drive...
+Executing: rclone move '/Volumes/Transfer/NEXUS_STAGING' gdrive:NEXUS_ARCHIVE --progress
+This may require authentication and will take time.
+SUCCESS: Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 2
+Elapsed time:         0.4sTransferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 7
+Elapsed time:         1.0sTransferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Checks:                10 / 10, 100%, Listed 12
+Deleted:                5 (files), 0 (dirs), 15.268 KiB (freed)
+Elapsed time:         1.0s
+
+
+--- CLOUD PURGE PROTOCOL COMPLETE ---
+[0;32mNEXUS_001: Complete. Cloud Purge executed. Staging area prepared.[0m

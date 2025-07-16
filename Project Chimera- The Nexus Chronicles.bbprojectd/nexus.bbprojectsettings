@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:nexus</key>
+	<false/>
+	<key>ExpandedEditorWidth:nexus:displays([(0, 0), (1440, 900)])</key>
+	<integer>860</integer>
+	<key>ExpandedItems:nexus</key>
+	<array>
+		<string>51D2F44B-3F6F-4E6E-85B5-38209BC7E961</string>
+	</array>
+	<key>FileFilterMode:nexus</key>
+	<integer>0</integer>
+	<key>OpenDocuments:nexus</key>
+	<array>
+		<dict>
+			<key>BookmarkData</key>
+			<data>
+			Ym9vawwDAAAAAAQQMAAAAPKOPzNoN7dRwEWz7LdNFu5Ii1thB4Ci
+			r470P5BwO32p/AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			AAAFAAAAAQEAAG5leHVzAAAABwAAAAEBAABEZXNrdG9wACkAAAAB
+			AQAAUHJvamVjdCBDaGltZXJhLSBUaGUgTmV4dXMgQ2hyb25pY2xl
+			Lmh0bWwAAAAQAAAAAQYAABAAAAAgAAAAMAAAAEAAAAAIAAAABAMA
+			ALFjAAAAAAAACAAAAAQDAACOiAAAAAAAAAgAAAAEAwAAk4gAAAAA
+			AAAIAAAABAMAAMF3IQAAAAAAEAAAAAEGAACMAAAAnAAAAKwAAAC8
+			AAAACAAAAAAEAABBxxPpqLxLohgAAAABAgAAAQAAAAAAAAAPAAAA
+			AAAAAAAAAAAAAAAACAAAAAQDAAACAAAAAAAAAAQAAAADAwAA9QEA
+			AAgAAAABCQAAZmlsZTovLy8EAAAAAQEAAEF1cmEIAAAABAMAAABg
+			R/gNAAAACAAAAAAEAABBwd5EgAAAACQAAAABAQAARTM4OUI1OUQt
+			MThBNC00NjEzLTg2M0MtODhCMDEwRjI1MDE2GAAAAAECAACBAAAA
+			AQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUA
+			ABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkAAAQA
+			AAADAwAAsigAANgAAAD+////AQAAAAAAAAARAAAABBAAAHQAAAAA
+			AAAABRAAAMwAAAAAAAAAEBAAAPQAAAAAAAAAQBAAAOQAAAAAAAAA
+			AiAAALgBAAAAAAAABSAAADABAAAAAAAAECAAAEABAAAAAAAAESAA
+			AGwBAAAAAAAAEiAAAEwBAAAAAAAAEyAAAFwBAAAAAAAAICAAAJgB
+			AAAAAAAAMCAAAMQBAAAAAAAAAcAAABQBAAAAAAAAEcAAACAAAAAA
+			AAAAEsAAACQBAAAAAAAAENAAAAQAAAAAAAAAzAEAgPABAAAAAAAA
+			</data>
+			<key>FileURL</key>
+			<string>file:///Users/nexus/Desktop/Project%20Chimera-%20The%20Nexus%20Chronicle.html</string>
+			<key>HasSecurityScope</key>
+			<true/>
+			<key>RelativePath</key>
+			<string>./Project Chimera- The Nexus Chronicle.html</string>
+			<key>TypeID</key>
+			<string>_CFileLocator</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>OpenDocumentsExpanded</key>
+	<true/>
+	<key>OpenDocumentsSplitterProportion</key>
+	<real>-0.0023255813953488857</real>
+	<key>ProjectItemsExpanded</key>
+	<true/>
+	<key>ProjectViewVisible</key>
+	<false/>
+	<key>RecentItems:nexus</key>
+	<array/>
+	<key>ScratchpadItemsExpanded</key>
+	<true/>
+	<key>ScratchpadItemsVisible</key>
+	<true/>
+	<key>ShowSCMData:nexus</key>
+	<false/>
+	<key>ToolbarVisible:nexus</key>
+	<false/>
+	<key>ViewSplitterPosition:nexus</key>
+	<real>0.25</real>
+	<key>WindowFrame:nexus:displays([(0, 0), (1440, 900)])</key>
+	<string>rect(91,290,834,1150)</string>
+</dict>
+</plist>

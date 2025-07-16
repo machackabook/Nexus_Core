@@ -1,0 +1,1 @@
+# NEXUS Chronicles\n\nThis directory contains all analytical outputs, strategic plans, and synthesized intelligence from our operations.\n\n## Structure\n- **Daily**: Daily operational logs and insights\n- **Strategic**: Long-term strategic planning documents\n- **Technical**: Technical analysis and system documentation\n- **Intelligence**: Gathered intelligence and analysis

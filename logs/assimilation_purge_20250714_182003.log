@@ -1,0 +1,1514 @@
+[2025-07-14 18:20:03.907528] --- PROTOCOL: THE GREAT ASSIMILATION & CLOUD PURGE v2.0 INITIATED ---
+[2025-07-14 18:20:03.919357] Creating directory: /Volumes/Transfer/NEXUS_STAGING/assimilated_archives
+[2025-07-14 18:20:03.921623] 
+[+] Assimilating historical data from MacInTosh user...
+[2025-07-14 18:20:03.942604] Creating compressed archive of /System/Volumes/Data/Users/MacInTosh...
+[2025-07-14 18:20:03.943085] Executing: tar -czf '/Volumes/Transfer/NEXUS_STAGING/assimilated_archives/MacInTosh_Archive_20250714.tar.gz' -C '/System/Volumes/Data/Users' 'MacInTosh'
+[2025-07-14 18:24:33.865330] Downloads directory not found at /System/Volumes/Data/Users/MacInTosh/Downloads. Skipping archival.
+[2025-07-14 18:24:33.873558] 
+[+] Initiating rclone transfer to Google Drive...
+[2025-07-14 18:24:33.920424] This may require authentication and will take time. The Architect must provide the human handshake.
+[2025-07-14 18:24:33.921119] Executing: rclone move '/Volumes/Transfer/NEXUS_STAGING/assimilated_archives' gdrive:NEXUS_ARCHIVE/Assimilated_Data --progress
+[2025-07-14 18:27:07.532266] STDOUT: Transferred:   	          0 B / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         0.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	          0 B / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         0.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	          0 B / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         1.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	          0 B / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         2.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	          0 B / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         2.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	      412 KiB / 188.377 MiB, 0%, 0 B/s, ETA -
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         2.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 0/s, -Transferred:   	    1.059 MiB / 188.377 MiB, 1%, 137.334 KiB/s, ETA 23m16s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         3.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 201.329Ki/s, 1Transferred:   	    1.746 MiB / 188.377 MiB, 1%, 137.334 KiB/s, ETA 23m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         3.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  0% /188.377Mi, 201.329Ki/s, 1Transferred:   	    2.465 MiB / 188.377 MiB, 1%, 447.001 KiB/s, ETA 7m5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         4.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  1% /188.377Mi, 527.032Ki/s, 6Transferred:   	    3.215 MiB / 188.377 MiB, 2%, 447.001 KiB/s, ETA 7m4s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         4.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  1% /188.377Mi, 527.032Ki/s, 5Transferred:   	    3.934 MiB / 188.377 MiB, 2%, 658.418 KiB/s, ETA 4m46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         5.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  2% /188.377Mi, 716.016Ki/s, 4Transferred:   	    4.621 MiB / 188.377 MiB, 2%, 658.418 KiB/s, ETA 4m45s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         5.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  2% /188.377Mi, 716.016Ki/s, 4Transferred:   	    5.340 MiB / 188.377 MiB, 3%, 788.679 KiB/s, ETA 3m57s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         6.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  2% /188.377Mi, 836.678Ki/s, 3Transferred:   	    6.059 MiB / 188.377 MiB, 3%, 788.679 KiB/s, ETA 3m56s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         6.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  3% /188.377Mi, 836.678Ki/s, 3Transferred:   	    6.777 MiB / 188.377 MiB, 4%, 886.285 KiB/s, ETA 3m29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         7.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  3% /188.377Mi, 932.013Ki/s, 3Transferred:   	    7.465 MiB / 188.377 MiB, 4%, 886.285 KiB/s, ETA 3m29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         7.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  3% /188.377Mi, 932.013Ki/s, 3Transferred:   	        8 MiB / 188.377 MiB, 4%, 955.511 KiB/s, ETA 3m13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         8.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  4% /188.377Mi, 995.504Ki/s, 3Transferred:   	    8.594 MiB / 188.377 MiB, 5%, 955.511 KiB/s, ETA 3m12s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         8.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  4% /188.377Mi, 995.504Ki/s, 3Transferred:   	    9.215 MiB / 188.377 MiB, 5%, 977.787 KiB/s, ETA 3m7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         9.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  4% /188.377Mi, 999.116Ki/s, 3Transferred:   	    9.840 MiB / 188.377 MiB, 5%, 977.787 KiB/s, ETA 3m6s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:         9.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  5% /188.377Mi, 999.116Ki/s, 3Transferred:   	   10.559 MiB / 188.377 MiB, 6%, 1010.809 KiB/s, ETA 3m
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        10.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  5% /188.377Mi, 1.012Mi/s, 2m5Transferred:   	   11.246 MiB / 188.377 MiB, 6%, 1010.809 KiB/s, ETA 2m59s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        10.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  5% /188.377Mi, 1.012Mi/s, 2m5Transferred:   	   11.965 MiB / 188.377 MiB, 6%, 1.022 MiB/s, ETA 2m52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        11.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  6% /188.377Mi, 1.048Mi/s, 2m4Transferred:   	   12.652 MiB / 188.377 MiB, 7%, 1.022 MiB/s, ETA 2m51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        11.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  6% /188.377Mi, 1.048Mi/s, 2m4Transferred:   	   13.340 MiB / 188.377 MiB, 7%, 1.054 MiB/s, ETA 2m46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        12.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  7% /188.377Mi, 1.078Mi/s, 2m4Transferred:   	   14.059 MiB / 188.377 MiB, 7%, 1.054 MiB/s, ETA 2m45s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        12.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  7% /188.377Mi, 1.078Mi/s, 2m4Transferred:   	   14.715 MiB / 188.377 MiB, 8%, 1.081 MiB/s, ETA 2m40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        13.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  7% /188.377Mi, 1.103Mi/s, 2m3Transferred:   	   15.402 MiB / 188.377 MiB, 8%, 1.081 MiB/s, ETA 2m39s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        13.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  8% /188.377Mi, 1.103Mi/s, 2m3Transferred:   	       16 MiB / 188.377 MiB, 8%, 1.100 MiB/s, ETA 2m36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        14.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  8% /188.377Mi, 1.120Mi/s, 2m3Transferred:   	   16.750 MiB / 188.377 MiB, 9%, 1.100 MiB/s, ETA 2m36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        14.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  8% /188.377Mi, 1.120Mi/s, 2m3Transferred:   	   17.434 MiB / 188.377 MiB, 9%, 1.117 MiB/s, ETA 2m33s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        15.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  9% /188.377Mi, 1.137Mi/s, 2m3Transferred:   	   18.152 MiB / 188.377 MiB, 10%, 1.117 MiB/s, ETA 2m32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        15.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  9% /188.377Mi, 1.137Mi/s, 2m2Transferred:   	   18.809 MiB / 188.377 MiB, 10%, 1.135 MiB/s, ETA 2m29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        16.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:  9% /188.377Mi, 1.150Mi/s, 2m2Transferred:   	   19.496 MiB / 188.377 MiB, 10%, 1.135 MiB/s, ETA 2m28s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        16.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 10% /188.377Mi, 1.150Mi/s, 2m2Transferred:   	   20.215 MiB / 188.377 MiB, 11%, 1.150 MiB/s, ETA 2m26s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        17.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 10% /188.377Mi, 1.164Mi/s, 2m2Transferred:   	   20.840 MiB / 188.377 MiB, 11%, 1.150 MiB/s, ETA 2m25s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        17.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 11% /188.377Mi, 1.164Mi/s, 2m2Transferred:   	   21.559 MiB / 188.377 MiB, 11%, 1.160 MiB/s, ETA 2m23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        18.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 11% /188.377Mi, 1.175Mi/s, 2m2Transferred:   	   22.184 MiB / 188.377 MiB, 12%, 1.160 MiB/s, ETA 2m23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        18.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 11% /188.377Mi, 1.175Mi/s, 2m2Transferred:   	   22.871 MiB / 188.377 MiB, 12%, 1.171 MiB/s, ETA 2m21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        19.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 12% /188.377Mi, 1.186Mi/s, 2m1Transferred:   	   23.496 MiB / 188.377 MiB, 12%, 1.171 MiB/s, ETA 2m20s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        19.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 12% /188.377Mi, 1.186Mi/s, 2m1Transferred:   	       24 MiB / 188.377 MiB, 13%, 1.180 MiB/s, ETA 2m19s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        20.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 12% /188.377Mi, 1.194Mi/s, 2m1Transferred:   	   24.719 MiB / 188.377 MiB, 13%, 1.180 MiB/s, ETA 2m18s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        20.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 13% /188.377Mi, 1.194Mi/s, 2m1Transferred:   	   25.434 MiB / 188.377 MiB, 14%, 1.183 MiB/s, ETA 2m17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        21.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 13% /188.377Mi, 1.195Mi/s, 2m1Transferred:   	   26.152 MiB / 188.377 MiB, 14%, 1.183 MiB/s, ETA 2m17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        21.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 13% /188.377Mi, 1.195Mi/s, 2m1Transferred:   	   26.715 MiB / 188.377 MiB, 14%, 1.198 MiB/s, ETA 2m14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        22.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 14% /188.377Mi, 1.211Mi/s, 2m1Transferred:   	   27.434 MiB / 188.377 MiB, 15%, 1.198 MiB/s, ETA 2m14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        22.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 14% /188.377Mi, 1.211Mi/s, 2m1Transferred:   	   27.996 MiB / 188.377 MiB, 15%, 1.204 MiB/s, ETA 2m13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        23.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 14% /188.377Mi, 1.205Mi/s, 2m1Transferred:   	   28.715 MiB / 188.377 MiB, 15%, 1.204 MiB/s, ETA 2m12s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        23.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 15% /188.377Mi, 1.205Mi/s, 2m1Transferred:   	   29.277 MiB / 188.377 MiB, 16%, 1.208 MiB/s, ETA 2m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        24.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 15% /188.377Mi, 1.222Mi/s, 2m1Transferred:   	   30.027 MiB / 188.377 MiB, 16%, 1.208 MiB/s, ETA 2m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        25.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 15% /188.377Mi, 1.222Mi/s, 2m9Transferred:   	   30.590 MiB / 188.377 MiB, 16%, 1.215 MiB/s, ETA 2m9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        25.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 16% /188.377Mi, 1.218Mi/s, 2m9Transferred:   	   31.309 MiB / 188.377 MiB, 17%, 1.215 MiB/s, ETA 2m9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        25.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 16% /188.377Mi, 1.218Mi/s, 2m9Transferred:   	   31.902 MiB / 188.377 MiB, 17%, 1.219 MiB/s, ETA 2m8s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        26.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 16% /188.377Mi, 1.229Mi/s, 2m7Transferred:   	   32.531 MiB / 188.377 MiB, 17%, 1.219 MiB/s, ETA 2m7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        26.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 17% /188.377Mi, 1.229Mi/s, 2m6Transferred:   	   33.090 MiB / 188.377 MiB, 18%, 1.219 MiB/s, ETA 2m7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        27.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 17% /188.377Mi, 1.231Mi/s, 2m6Transferred:   	   33.840 MiB / 188.377 MiB, 18%, 1.219 MiB/s, ETA 2m6s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        27.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 17% /188.377Mi, 1.231Mi/s, 2m5Transferred:   	   34.496 MiB / 188.377 MiB, 18%, 1.225 MiB/s, ETA 2m5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        28.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 18% /188.377Mi, 1.236Mi/s, 2m4Transferred:   	   35.152 MiB / 188.377 MiB, 19%, 1.225 MiB/s, ETA 2m5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        28.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 18% /188.377Mi, 1.236Mi/s, 2m3Transferred:   	   35.871 MiB / 188.377 MiB, 19%, 1.230 MiB/s, ETA 2m3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        29.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 19% /188.377Mi, 1.239Mi/s, 2m3Transferred:   	   36.402 MiB / 188.377 MiB, 19%, 1.230 MiB/s, ETA 2m3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        29.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 19% /188.377Mi, 1.239Mi/s, 2m2Transferred:   	   37.152 MiB / 188.377 MiB, 20%, 1.234 MiB/s, ETA 2m2s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        30.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 19% /188.377Mi, 1.239Mi/s, 2m2Transferred:   	   37.746 MiB / 188.377 MiB, 20%, 1.234 MiB/s, ETA 2m2s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        30.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 20% /188.377Mi, 1.239Mi/s, 2m1Transferred:   	   38.465 MiB / 188.377 MiB, 20%, 1.238 MiB/s, ETA 2m1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        31.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 20% /188.377Mi, 1.248Mi/s, 2m0Transferred:   	   39.027 MiB / 188.377 MiB, 21%, 1.238 MiB/s, ETA 2m
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        31.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 20% /188.377Mi, 1.248Mi/s, 1m5Transferred:   	   39.746 MiB / 188.377 MiB, 21%, 1.241 MiB/s, ETA 1m59s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        32.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 21% /188.377Mi, 1.248Mi/s, 1m5Transferred:   	   40.344 MiB / 188.377 MiB, 21%, 1.241 MiB/s, ETA 1m59s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        32.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 21% /188.377Mi, 1.248Mi/s, 1m5Transferred:   	   40.906 MiB / 188.377 MiB, 22%, 1.246 MiB/s, ETA 1m58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        33.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 21% /188.377Mi, 1.254Mi/s, 1m5Transferred:   	   41.652 MiB / 188.377 MiB, 22%, 1.246 MiB/s, ETA 1m57s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        33.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 22% /188.377Mi, 1.254Mi/s, 1m5Transferred:   	   42.246 MiB / 188.377 MiB, 22%, 1.250 MiB/s, ETA 1m56s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        34.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 22% /188.377Mi, 1.248Mi/s, 1m5Transferred:   	   42.902 MiB / 188.377 MiB, 23%, 1.250 MiB/s, ETA 1m56s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        34.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 22% /188.377Mi, 1.248Mi/s, 1m5Transferred:   	   43.527 MiB / 188.377 MiB, 23%, 1.250 MiB/s, ETA 1m55s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        35.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 23% /188.377Mi, 1.250Mi/s, 1m5Transferred:   	   44.246 MiB / 188.377 MiB, 23%, 1.250 MiB/s, ETA 1m55s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        35.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 23% /188.377Mi, 1.250Mi/s, 1m5Transferred:   	   44.809 MiB / 188.377 MiB, 24%, 1.256 MiB/s, ETA 1m54s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        36.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 23% /188.377Mi, 1.262Mi/s, 1m5Transferred:   	   45.559 MiB / 188.377 MiB, 24%, 1.256 MiB/s, ETA 1m53s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        36.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 24% /188.377Mi, 1.262Mi/s, 1m5Transferred:   	   46.121 MiB / 188.377 MiB, 24%, 1.259 MiB/s, ETA 1m52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        37.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 24% /188.377Mi, 1.265Mi/s, 1m5Transferred:   	   46.840 MiB / 188.377 MiB, 25%, 1.259 MiB/s, ETA 1m52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        37.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 24% /188.377Mi, 1.265Mi/s, 1m5Transferred:   	   47.434 MiB / 188.377 MiB, 25%, 1.261 MiB/s, ETA 1m51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        38.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 25% /188.377Mi, 1.266Mi/s, 1m5Transferred:   	       48 MiB / 188.377 MiB, 25%, 1.261 MiB/s, ETA 1m51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        38.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 25% /188.377Mi, 1.266Mi/s, 1m5Transferred:   	   48.656 MiB / 188.377 MiB, 26%, 1.254 MiB/s, ETA 1m51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        39.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 25% /188.377Mi, 1.261Mi/s, 1m5Transferred:   	   49.340 MiB / 188.377 MiB, 26%, 1.254 MiB/s, ETA 1m50s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        39.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 26% /188.377Mi, 1.261Mi/s, 1m5Transferred:   	   49.934 MiB / 188.377 MiB, 27%, 1.260 MiB/s, ETA 1m49s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        40.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 26% /188.377Mi, 1.264Mi/s, 1m4Transferred:   	   50.652 MiB / 188.377 MiB, 27%, 1.260 MiB/s, ETA 1m49s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        40.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 26% /188.377Mi, 1.264Mi/s, 1m4Transferred:   	   51.371 MiB / 188.377 MiB, 27%, 1.263 MiB/s, ETA 1m48s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        41.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 27% /188.377Mi, 1.267Mi/s, 1m4Transferred:   	   51.965 MiB / 188.377 MiB, 28%, 1.263 MiB/s, ETA 1m48s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        41.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 27% /188.377Mi, 1.267Mi/s, 1m4Transferred:   	   52.590 MiB / 188.377 MiB, 28%, 1.266 MiB/s, ETA 1m47s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        42.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 27% /188.377Mi, 1.270Mi/s, 1m4Transferred:   	   53.277 MiB / 188.377 MiB, 28%, 1.266 MiB/s, ETA 1m46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        42.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 28% /188.377Mi, 1.270Mi/s, 1m4Transferred:   	   53.996 MiB / 188.377 MiB, 29%, 1.269 MiB/s, ETA 1m45s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        43.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 28% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   54.590 MiB / 188.377 MiB, 29%, 1.269 MiB/s, ETA 1m45s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        43.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 28% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   55.246 MiB / 188.377 MiB, 29%, 1.272 MiB/s, ETA 1m44s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        44.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 29% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   55.871 MiB / 188.377 MiB, 30%, 1.272 MiB/s, ETA 1m44s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        44.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 29% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   56.500 MiB / 188.377 MiB, 30%, 1.272 MiB/s, ETA 1m43s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        45.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 29% /188.377Mi, 1.266Mi/s, 1m4Transferred:   	   57.090 MiB / 188.377 MiB, 30%, 1.272 MiB/s, ETA 1m43s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        45.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 30% /188.377Mi, 1.266Mi/s, 1m4Transferred:   	   57.809 MiB / 188.377 MiB, 31%, 1.269 MiB/s, ETA 1m42s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        46.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 30% /188.377Mi, 1.272Mi/s, 1m4Transferred:   	   58.402 MiB / 188.377 MiB, 31%, 1.269 MiB/s, ETA 1m42s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        46.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 31% /188.377Mi, 1.272Mi/s, 1m4Transferred:   	   59.121 MiB / 188.377 MiB, 31%, 1.272 MiB/s, ETA 1m41s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        47.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 31% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   59.684 MiB / 188.377 MiB, 32%, 1.272 MiB/s, ETA 1m41s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        47.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 31% /188.377Mi, 1.275Mi/s, 1m4Transferred:   	   60.434 MiB / 188.377 MiB, 32%, 1.272 MiB/s, ETA 1m40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        48.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 32% /188.377Mi, 1.277Mi/s, 1m4Transferred:   	   61.121 MiB / 188.377 MiB, 32%, 1.272 MiB/s, ETA 1m40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        48.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 32% /188.377Mi, 1.277Mi/s, 1m3Transferred:   	   61.777 MiB / 188.377 MiB, 33%, 1.283 MiB/s, ETA 1m38s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        49.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 32% /188.377Mi, 1.281Mi/s, 1m3Transferred:   	   62.371 MiB / 188.377 MiB, 33%, 1.283 MiB/s, ETA 1m38s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        49.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 33% /188.377Mi, 1.281Mi/s, 1m3Transferred:   	   63.059 MiB / 188.377 MiB, 33%, 1.281 MiB/s, ETA 1m37s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        50.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 33% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   63.652 MiB / 188.377 MiB, 34%, 1.281 MiB/s, ETA 1m37s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        50.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 33% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   64.312 MiB / 188.377 MiB, 34%, 1.281 MiB/s, ETA 1m36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        51.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 34% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   64.969 MiB / 188.377 MiB, 34%, 1.281 MiB/s, ETA 1m36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        51.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 34% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   65.652 MiB / 188.377 MiB, 35%, 1.283 MiB/s, ETA 1m35s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        52.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 34% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   66.309 MiB / 188.377 MiB, 35%, 1.283 MiB/s, ETA 1m35s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        52.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 35% /188.377Mi, 1.283Mi/s, 1m3Transferred:   	   66.996 MiB / 188.377 MiB, 36%, 1.286 MiB/s, ETA 1m34s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        53.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 35% /188.377Mi, 1.289Mi/s, 1m3Transferred:   	   67.684 MiB / 188.377 MiB, 36%, 1.286 MiB/s, ETA 1m33s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        53.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 35% /188.377Mi, 1.289Mi/s, 1m3Transferred:   	   68.340 MiB / 188.377 MiB, 36%, 1.292 MiB/s, ETA 1m32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        54.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 36% /188.377Mi, 1.290Mi/s, 1m3Transferred:   	   68.871 MiB / 188.377 MiB, 37%, 1.292 MiB/s, ETA 1m32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        54.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 36% /188.377Mi, 1.290Mi/s, 1m3Transferred:   	   69.590 MiB / 188.377 MiB, 37%, 1.285 MiB/s, ETA 1m32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        55.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 36% /188.377Mi, 1.290Mi/s, 1m3Transferred:   	   70.309 MiB / 188.377 MiB, 37%, 1.285 MiB/s, ETA 1m31s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        56.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 37% /188.377Mi, 1.290Mi/s, 1m3Transferred:   	   70.840 MiB / 188.377 MiB, 38%, 1.295 MiB/s, ETA 1m30s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        56.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 37% /188.377Mi, 1.285Mi/s, 1m3Transferred:   	   71.465 MiB / 188.377 MiB, 38%, 1.295 MiB/s, ETA 1m30s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        56.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 37% /188.377Mi, 1.285Mi/s, 1m3Transferred:   	       72 MiB / 188.377 MiB, 38%, 1.288 MiB/s, ETA 1m30s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        57.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 38% /188.377Mi, 1.291Mi/s, 1m3Transferred:   	   72.781 MiB / 188.377 MiB, 39%, 1.288 MiB/s, ETA 1m29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        57.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 38% /188.377Mi, 1.291Mi/s, 1m2Transferred:   	   73.434 MiB / 188.377 MiB, 39%, 1.288 MiB/s, ETA 1m29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        58.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 38% /188.377Mi, 1.286Mi/s, 1m2Transferred:   	   74.027 MiB / 188.377 MiB, 39%, 1.288 MiB/s, ETA 1m28s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        58.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 39% /188.377Mi, 1.286Mi/s, 1m2Transferred:   	   74.715 MiB / 188.377 MiB, 40%, 1.285 MiB/s, ETA 1m28s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        59.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 39% /188.377Mi, 1.288Mi/s, 1m2Transferred:   	   75.340 MiB / 188.377 MiB, 40%, 1.285 MiB/s, ETA 1m27s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:        59.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 39% /188.377Mi, 1.288Mi/s, 1m2Transferred:   	   75.902 MiB / 188.377 MiB, 40%, 1.287 MiB/s, ETA 1m27s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m0.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 40% /188.377Mi, 1.290Mi/s, 1m2Transferred:   	   76.652 MiB / 188.377 MiB, 41%, 1.287 MiB/s, ETA 1m26s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m0.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 40% /188.377Mi, 1.290Mi/s, 1m2Transferred:   	   77.371 MiB / 188.377 MiB, 41%, 1.289 MiB/s, ETA 1m26s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m1.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 41% /188.377Mi, 1.293Mi/s, 1m2Transferred:   	   77.996 MiB / 188.377 MiB, 41%, 1.289 MiB/s, ETA 1m25s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m1.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 41% /188.377Mi, 1.293Mi/s, 1m2Transferred:   	   78.590 MiB / 188.377 MiB, 42%, 1.292 MiB/s, ETA 1m24s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m2.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 41% /188.377Mi, 1.288Mi/s, 1m2Transferred:   	   79.309 MiB / 188.377 MiB, 42%, 1.292 MiB/s, ETA 1m24s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m2.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 42% /188.377Mi, 1.288Mi/s, 1m2Transferred:   	       80 MiB / 188.377 MiB, 42%, 1.293 MiB/s, ETA 1m23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m3.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 42% /188.377Mi, 1.296Mi/s, 1m2Transferred:   	   80.500 MiB / 188.377 MiB, 43%, 1.293 MiB/s, ETA 1m23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m3.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 42% /188.377Mi, 1.296Mi/s, 1m2Transferred:   	   81.215 MiB / 188.377 MiB, 43%, 1.287 MiB/s, ETA 1m23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m4.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 43% /188.377Mi, 1.291Mi/s, 1m2Transferred:   	   81.902 MiB / 188.377 MiB, 43%, 1.287 MiB/s, ETA 1m22s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m4.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 43% /188.377Mi, 1.291Mi/s, 1m2Transferred:   	   82.527 MiB / 188.377 MiB, 44%, 1.294 MiB/s, ETA 1m21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m5.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 43% /188.377Mi, 1.290Mi/s, 1m2Transferred:   	   83.121 MiB / 188.377 MiB, 44%, 1.294 MiB/s, ETA 1m21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m5.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 44% /188.377Mi, 1.290Mi/s, 1m2Transferred:   	   83.809 MiB / 188.377 MiB, 44%, 1.290 MiB/s, ETA 1m21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m6.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 44% /188.377Mi, 1.292Mi/s, 1m2Transferred:   	   84.527 MiB / 188.377 MiB, 45%, 1.290 MiB/s, ETA 1m20s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m6.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 44% /188.377Mi, 1.292Mi/s, 1m2Transferred:   	   85.121 MiB / 188.377 MiB, 45%, 1.297 MiB/s, ETA 1m19s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m7.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 45% /188.377Mi, 1.289Mi/s, 1m2Transferred:   	   85.840 MiB / 188.377 MiB, 46%, 1.297 MiB/s, ETA 1m19s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m7.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 45% /188.377Mi, 1.289Mi/s, 1m1Transferred:   	   86.434 MiB / 188.377 MiB, 46%, 1.298 MiB/s, ETA 1m18s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m8.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 45% /188.377Mi, 1.291Mi/s, 1m1Transferred:   	   87.059 MiB / 188.377 MiB, 46%, 1.298 MiB/s, ETA 1m18s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m8.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 46% /188.377Mi, 1.291Mi/s, 1m1Transferred:   	   87.777 MiB / 188.377 MiB, 47%, 1.293 MiB/s, ETA 1m17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m9.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 46% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   88.250 MiB / 188.377 MiB, 47%, 1.293 MiB/s, ETA 1m17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       1m9.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 46% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   88.969 MiB / 188.377 MiB, 47%, 1.286 MiB/s, ETA 1m17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m10.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 47% /188.377Mi, 1.291Mi/s, 1m1Transferred:   	   89.684 MiB / 188.377 MiB, 48%, 1.286 MiB/s, ETA 1m16s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m10.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 47% /188.377Mi, 1.291Mi/s, 1m1Transferred:   	   90.277 MiB / 188.377 MiB, 48%, 1.296 MiB/s, ETA 1m15s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m11.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 47% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   90.996 MiB / 188.377 MiB, 48%, 1.296 MiB/s, ETA 1m15s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m11.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 48% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   91.590 MiB / 188.377 MiB, 49%, 1.297 MiB/s, ETA 1m14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m12.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 48% /188.377Mi, 1.295Mi/s, 1m1Transferred:   	   92.309 MiB / 188.377 MiB, 49%, 1.297 MiB/s, ETA 1m14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m12.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 49% /188.377Mi, 1.295Mi/s, 1m1Transferred:   	   92.902 MiB / 188.377 MiB, 49%, 1.298 MiB/s, ETA 1m13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m13.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 49% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   93.621 MiB / 188.377 MiB, 50%, 1.298 MiB/s, ETA 1m13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m13.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 49% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   94.215 MiB / 188.377 MiB, 50%, 1.299 MiB/s, ETA 1m12s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m14.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 50% /188.377Mi, 1.293Mi/s, 1m1Transferred:   	   94.934 MiB / 188.377 MiB, 50%, 1.299 MiB/s, ETA 1m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m14.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 50% /188.377Mi, 1.293Mi/s, 1m1Transferred:   	   95.496 MiB / 188.377 MiB, 51%, 1.301 MiB/s, ETA 1m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m15.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 50% /188.377Mi, 1.302Mi/s, 1m1Transferred:   	       96 MiB / 188.377 MiB, 51%, 1.301 MiB/s, ETA 1m10s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m15.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 50% /188.377Mi, 1.302Mi/s, 1m1Transferred:   	   96.844 MiB / 188.377 MiB, 51%, 1.285 MiB/s, ETA 1m11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m16.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 51% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   97.434 MiB / 188.377 MiB, 52%, 1.285 MiB/s, ETA 1m10s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m16.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 51% /188.377Mi, 1.296Mi/s, 1m1Transferred:   	   98.152 MiB / 188.377 MiB, 52%, 1.294 MiB/s, ETA 1m9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m17.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 52% /188.377Mi, 1.296Mi/s, 1m9Transferred:   	   98.746 MiB / 188.377 MiB, 52%, 1.294 MiB/s, ETA 1m9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m17.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 52% /188.377Mi, 1.296Mi/s, 1m9Transferred:   	   99.434 MiB / 188.377 MiB, 53%, 1.295 MiB/s, ETA 1m8s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m18.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 52% /188.377Mi, 1.297Mi/s, 1m8Transferred:   	  100.059 MiB / 188.377 MiB, 53%, 1.295 MiB/s, ETA 1m8s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m18.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 53% /188.377Mi, 1.297Mi/s, 1m8Transferred:   	  100.809 MiB / 188.377 MiB, 54%, 1.296 MiB/s, ETA 1m7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m19.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 53% /188.377Mi, 1.298Mi/s, 1m7Transferred:   	  101.402 MiB / 188.377 MiB, 54%, 1.296 MiB/s, ETA 1m7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m20.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 53% /188.377Mi, 1.298Mi/s, 1m6Transferred:   	  102.090 MiB / 188.377 MiB, 54%, 1.299 MiB/s, ETA 1m6s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m20.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 54% /188.377Mi, 1.301Mi/s, 1m6Transferred:   	  102.809 MiB / 188.377 MiB, 55%, 1.299 MiB/s, ETA 1m5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m20.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 54% /188.377Mi, 1.301Mi/s, 1m5Transferred:   	  103.465 MiB / 188.377 MiB, 55%, 1.306 MiB/s, ETA 1m5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m21.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 54% /188.377Mi, 1.308Mi/s, 1m4Transferred:   	      104 MiB / 188.377 MiB, 55%, 1.306 MiB/s, ETA 1m4s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m21.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 55% /188.377Mi, 1.308Mi/s, 1m4Transferred:   	  104.656 MiB / 188.377 MiB, 56%, 1.299 MiB/s, ETA 1m4s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m22.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 55% /188.377Mi, 1.297Mi/s, 1m4Transferred:   	  105.371 MiB / 188.377 MiB, 56%, 1.299 MiB/s, ETA 1m3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m22.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 55% /188.377Mi, 1.297Mi/s, 1m4Transferred:   	  105.934 MiB / 188.377 MiB, 56%, 1.303 MiB/s, ETA 1m3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m23.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 56% /188.377Mi, 1.301Mi/s, 1m3Transferred:   	  106.590 MiB / 188.377 MiB, 57%, 1.303 MiB/s, ETA 1m2s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m23.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 56% /188.377Mi, 1.301Mi/s, 1m2Transferred:   	  107.277 MiB / 188.377 MiB, 57%, 1.298 MiB/s, ETA 1m2s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m24.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 56% /188.377Mi, 1.298Mi/s, 1m2Transferred:   	  107.996 MiB / 188.377 MiB, 57%, 1.298 MiB/s, ETA 1m1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m24.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 57% /188.377Mi, 1.298Mi/s, 1m1Transferred:   	  108.590 MiB / 188.377 MiB, 58%, 1.307 MiB/s, ETA 1m1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m25.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 57% /188.377Mi, 1.305Mi/s, 1m1Transferred:   	  109.309 MiB / 188.377 MiB, 58%, 1.307 MiB/s, ETA 1m
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m25.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 58% /188.377Mi, 1.305Mi/s, 1m0Transferred:   	  109.871 MiB / 188.377 MiB, 58%, 1.305 MiB/s, ETA 1m
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m26.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 58% /188.377Mi, 1.295Mi/s, 1m0Transferred:   	  110.590 MiB / 188.377 MiB, 59%, 1.305 MiB/s, ETA 59s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m26.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 58% /188.377Mi, 1.295Mi/s, 1m0Transferred:   	  111.152 MiB / 188.377 MiB, 59%, 1.304 MiB/s, ETA 59s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m27.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 59% /188.377Mi, 1.297Mi/s, 59sTransferred:   	  111.871 MiB / 188.377 MiB, 59%, 1.304 MiB/s, ETA 58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m27.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 59% /188.377Mi, 1.297Mi/s, 59sTransferred:   	  112.125 MiB / 188.377 MiB, 60%, 1.302 MiB/s, ETA 58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m28.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 59% /188.377Mi, 1.296Mi/s, 58sTransferred:   	  112.781 MiB / 188.377 MiB, 60%, 1.302 MiB/s, ETA 58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m28.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 59% /188.377Mi, 1.296Mi/s, 58sTransferred:   	  113.527 MiB / 188.377 MiB, 60%, 1.278 MiB/s, ETA 58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m29.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 60% /188.377Mi, 1.281Mi/s, 58sTransferred:   	  114.090 MiB / 188.377 MiB, 61%, 1.278 MiB/s, ETA 58s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m29.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 60% /188.377Mi, 1.281Mi/s, 57sTransferred:   	  114.809 MiB / 188.377 MiB, 61%, 1.280 MiB/s, ETA 57s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m30.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 60% /188.377Mi, 1.283Mi/s, 57sTransferred:   	  115.496 MiB / 188.377 MiB, 61%, 1.280 MiB/s, ETA 56s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m30.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 61% /188.377Mi, 1.283Mi/s, 56sTransferred:   	  116.090 MiB / 188.377 MiB, 62%, 1.288 MiB/s, ETA 56s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m31.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 61% /188.377Mi, 1.291Mi/s, 56sTransferred:   	  116.809 MiB / 188.377 MiB, 62%, 1.288 MiB/s, ETA 55s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m31.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 62% /188.377Mi, 1.291Mi/s, 55sTransferred:   	  117.402 MiB / 188.377 MiB, 62%, 1.289 MiB/s, ETA 55s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m32.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 62% /188.377Mi, 1.288Mi/s, 55sTransferred:   	  117.965 MiB / 188.377 MiB, 63%, 1.289 MiB/s, ETA 54s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m32.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 62% /188.377Mi, 1.288Mi/s, 54sTransferred:   	  118.684 MiB / 188.377 MiB, 63%, 1.281 MiB/s, ETA 54s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m33.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 63% /188.377Mi, 1.286Mi/s, 54sTransferred:   	  119.402 MiB / 188.377 MiB, 63%, 1.281 MiB/s, ETA 53s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m33.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 63% /188.377Mi, 1.286Mi/s, 53sTransferred:   	      120 MiB / 188.377 MiB, 64%, 1.293 MiB/s, ETA 52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m34.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 63% /188.377Mi, 1.293Mi/s, 52sTransferred:   	  120.656 MiB / 188.377 MiB, 64%, 1.288 MiB/s, ETA 52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m35.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 64% /188.377Mi, 1.293Mi/s, 52sTransferred:   	  121.340 MiB / 188.377 MiB, 64%, 1.288 MiB/s, ETA 52s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m35.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 64% /188.377Mi, 1.289Mi/s, 52sTransferred:   	  121.934 MiB / 188.377 MiB, 65%, 1.288 MiB/s, ETA 51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m35.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 64% /188.377Mi, 1.289Mi/s, 51sTransferred:   	  122.652 MiB / 188.377 MiB, 65%, 1.288 MiB/s, ETA 51s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m36.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 65% /188.377Mi, 1.290Mi/s, 50sTransferred:   	  123.246 MiB / 188.377 MiB, 65%, 1.288 MiB/s, ETA 50s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m36.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 65% /188.377Mi, 1.290Mi/s, 50sTransferred:   	  123.934 MiB / 188.377 MiB, 66%, 1.289 MiB/s, ETA 49s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m37.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 65% /188.377Mi, 1.293Mi/s, 49sTransferred:   	  124.559 MiB / 188.377 MiB, 66%, 1.289 MiB/s, ETA 49s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m37.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 66% /188.377Mi, 1.293Mi/s, 49sTransferred:   	  125.152 MiB / 188.377 MiB, 66%, 1.293 MiB/s, ETA 48s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m38.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 66% /188.377Mi, 1.293Mi/s, 48sTransferred:   	  125.871 MiB / 188.377 MiB, 67%, 1.293 MiB/s, ETA 48s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m38.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 66% /188.377Mi, 1.293Mi/s, 48sTransferred:   	  126.402 MiB / 188.377 MiB, 67%, 1.292 MiB/s, ETA 47s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m39.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 67% /188.377Mi, 1.286Mi/s, 48sTransferred:   	  127.059 MiB / 188.377 MiB, 67%, 1.292 MiB/s, ETA 47s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m39.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 67% /188.377Mi, 1.286Mi/s, 47sTransferred:   	  127.777 MiB / 188.377 MiB, 68%, 1.285 MiB/s, ETA 47s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m40.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 67% /188.377Mi, 1.288Mi/s, 47sTransferred:   	  128.219 MiB / 188.377 MiB, 68%, 1.285 MiB/s, ETA 46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m40.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 68% /188.377Mi, 1.288Mi/s, 46sTransferred:   	  128.969 MiB / 188.377 MiB, 68%, 1.277 MiB/s, ETA 46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m41.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 68% /188.377Mi, 1.282Mi/s, 46sTransferred:   	  129.590 MiB / 188.377 MiB, 69%, 1.277 MiB/s, ETA 46s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m41.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 68% /188.377Mi, 1.282Mi/s, 45sTransferred:   	  130.309 MiB / 188.377 MiB, 69%, 1.283 MiB/s, ETA 45s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m42.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 69% /188.377Mi, 1.285Mi/s, 45sTransferred:   	  131.027 MiB / 188.377 MiB, 70%, 1.283 MiB/s, ETA 44s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m42.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 69% /188.377Mi, 1.285Mi/s, 44sTransferred:   	  131.621 MiB / 188.377 MiB, 70%, 1.293 MiB/s, ETA 43s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m43.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 69% /188.377Mi, 1.289Mi/s, 44sTransferred:   	  132.246 MiB / 188.377 MiB, 70%, 1.293 MiB/s, ETA 43s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m43.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 70% /188.377Mi, 1.289Mi/s, 43sTransferred:   	  132.965 MiB / 188.377 MiB, 71%, 1.288 MiB/s, ETA 43s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m44.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 70% /188.377Mi, 1.290Mi/s, 42sTransferred:   	  133.559 MiB / 188.377 MiB, 71%, 1.288 MiB/s, ETA 42s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m44.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 70% /188.377Mi, 1.290Mi/s, 42sTransferred:   	  134.277 MiB / 188.377 MiB, 71%, 1.290 MiB/s, ETA 41s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m45.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 71% /188.377Mi, 1.292Mi/s, 41sTransferred:   	  134.840 MiB / 188.377 MiB, 72%, 1.290 MiB/s, ETA 41s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m45.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 71% /188.377Mi, 1.292Mi/s, 41sTransferred:   	  135.527 MiB / 188.377 MiB, 72%, 1.289 MiB/s, ETA 40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m46.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 71% /188.377Mi, 1.291Mi/s, 40sTransferred:   	      136 MiB / 188.377 MiB, 72%, 1.289 MiB/s, ETA 40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m47.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 72% /188.377Mi, 1.291Mi/s, 40sTransferred:   	  136.562 MiB / 188.377 MiB, 72%, 1.281 MiB/s, ETA 40s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m47.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 72% /188.377Mi, 1.277Mi/s, 40sTransferred:   	  137.246 MiB / 188.377 MiB, 73%, 1.281 MiB/s, ETA 39s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m47.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 72% /188.377Mi, 1.277Mi/s, 40sTransferred:   	  137.902 MiB / 188.377 MiB, 73%, 1.279 MiB/s, ETA 39s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m48.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 73% /188.377Mi, 1.281Mi/s, 39sTransferred:   	  138.559 MiB / 188.377 MiB, 74%, 1.279 MiB/s, ETA 38s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m48.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 73% /188.377Mi, 1.281Mi/s, 38sTransferred:   	  139.152 MiB / 188.377 MiB, 74%, 1.281 MiB/s, ETA 38s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m49.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 73% /188.377Mi, 1.283Mi/s, 38sTransferred:   	  139.840 MiB / 188.377 MiB, 74%, 1.281 MiB/s, ETA 37s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m49.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 74% /188.377Mi, 1.283Mi/s, 37sTransferred:   	  140.527 MiB / 188.377 MiB, 75%, 1.281 MiB/s, ETA 37s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m50.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 74% /188.377Mi, 1.283Mi/s, 37sTransferred:   	  141.152 MiB / 188.377 MiB, 75%, 1.281 MiB/s, ETA 36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m51.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 74% /188.377Mi, 1.283Mi/s, 36sTransferred:   	  141.715 MiB / 188.377 MiB, 75%, 1.283 MiB/s, ETA 36s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m51.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 75% /188.377Mi, 1.285Mi/s, 36sTransferred:   	  142.465 MiB / 188.377 MiB, 76%, 1.283 MiB/s, ETA 35s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m51.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 75% /188.377Mi, 1.285Mi/s, 35sTransferred:   	  143.184 MiB / 188.377 MiB, 76%, 1.285 MiB/s, ETA 35s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m52.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 76% /188.377Mi, 1.287Mi/s, 35sTransferred:   	  143.809 MiB / 188.377 MiB, 76%, 1.285 MiB/s, ETA 34s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m52.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 76% /188.377Mi, 1.287Mi/s, 34sTransferred:   	  144.406 MiB / 188.377 MiB, 77%, 1.291 MiB/s, ETA 34s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m53.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 76% /188.377Mi, 1.284Mi/s, 34sTransferred:   	  145.027 MiB / 188.377 MiB, 77%, 1.291 MiB/s, ETA 33s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m54.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 76% /188.377Mi, 1.284Mi/s, 33sTransferred:   	  145.684 MiB / 188.377 MiB, 77%, 1.284 MiB/s, ETA 33s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m54.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 77% /188.377Mi, 1.284Mi/s, 33sTransferred:   	  146.402 MiB / 188.377 MiB, 78%, 1.284 MiB/s, ETA 32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m54.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 77% /188.377Mi, 1.284Mi/s, 32sTransferred:   	  146.996 MiB / 188.377 MiB, 78%, 1.290 MiB/s, ETA 32s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m55.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 78% /188.377Mi, 1.282Mi/s, 32sTransferred:   	  147.715 MiB / 188.377 MiB, 78%, 1.290 MiB/s, ETA 31s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m55.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 78% /188.377Mi, 1.282Mi/s, 31sTransferred:   	  148.215 MiB / 188.377 MiB, 79%, 1.291 MiB/s, ETA 31s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m56.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 78% /188.377Mi, 1.294Mi/s, 31sTransferred:   	  148.871 MiB / 188.377 MiB, 79%, 1.291 MiB/s, ETA 30s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m56.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 79% /188.377Mi, 1.294Mi/s, 30sTransferred:   	  149.434 MiB / 188.377 MiB, 79%, 1.283 MiB/s, ETA 30s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m57.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 79% /188.377Mi, 1.285Mi/s, 30sTransferred:   	  150.152 MiB / 188.377 MiB, 80%, 1.283 MiB/s, ETA 29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m57.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 79% /188.377Mi, 1.285Mi/s, 29sTransferred:   	  150.902 MiB / 188.377 MiB, 80%, 1.284 MiB/s, ETA 29s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m58.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 80% /188.377Mi, 1.287Mi/s, 29sTransferred:   	  151.496 MiB / 188.377 MiB, 80%, 1.284 MiB/s, ETA 28s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m58.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 80% /188.377Mi, 1.287Mi/s, 28sTransferred:   	      152 MiB / 188.377 MiB, 81%, 1.286 MiB/s, ETA 28s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      1m59.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 80% /188.377Mi, 1.288Mi/s, 28sTransferred:   	  152.844 MiB / 188.377 MiB, 81%, 1.286 MiB/s, ETA 27s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m0.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 81% /188.377Mi, 1.288Mi/s, 27sTransferred:   	  153.465 MiB / 188.377 MiB, 81%, 1.290 MiB/s, ETA 27s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m0.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 81% /188.377Mi, 1.290Mi/s, 27sTransferred:   	  154.184 MiB / 188.377 MiB, 82%, 1.290 MiB/s, ETA 26s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m0.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 81% /188.377Mi, 1.290Mi/s, 26sTransferred:   	  154.809 MiB / 188.377 MiB, 82%, 1.293 MiB/s, ETA 25s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m1.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 82% /188.377Mi, 1.291Mi/s, 25sTransferred:   	  155.496 MiB / 188.377 MiB, 83%, 1.293 MiB/s, ETA 25s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m2.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 82% /188.377Mi, 1.291Mi/s, 25sTransferred:   	  156.090 MiB / 188.377 MiB, 83%, 1.295 MiB/s, ETA 24s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m2.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 82% /188.377Mi, 1.297Mi/s, 24sTransferred:   	  156.746 MiB / 188.377 MiB, 83%, 1.295 MiB/s, ETA 24s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m3.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 83% /188.377Mi, 1.297Mi/s, 24sTransferred:   	  157.465 MiB / 188.377 MiB, 84%, 1.294 MiB/s, ETA 23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m3.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 83% /188.377Mi, 1.294Mi/s, 23sTransferred:   	  158.059 MiB / 188.377 MiB, 84%, 1.294 MiB/s, ETA 23s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m3.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 83% /188.377Mi, 1.294Mi/s, 23sTransferred:   	  158.809 MiB / 188.377 MiB, 84%, 1.293 MiB/s, ETA 22s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m4.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 84% /188.377Mi, 1.295Mi/s, 22sTransferred:   	  159.465 MiB / 188.377 MiB, 85%, 1.300 MiB/s, ETA 22s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m5.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 84% /188.377Mi, 1.295Mi/s, 22sTransferred:   	      160 MiB / 188.377 MiB, 85%, 1.300 MiB/s, ETA 21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m5.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 84% /188.377Mi, 1.298Mi/s, 21sTransferred:   	  160.750 MiB / 188.377 MiB, 85%, 1.300 MiB/s, ETA 21s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m5.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 85% /188.377Mi, 1.298Mi/s, 21sTransferred:   	  161.340 MiB / 188.377 MiB, 86%, 1.301 MiB/s, ETA 20s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m6.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 85% /188.377Mi, 1.297Mi/s, 20sTransferred:   	  161.934 MiB / 188.377 MiB, 86%, 1.301 MiB/s, ETA 20s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m6.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 85% /188.377Mi, 1.297Mi/s, 20sTransferred:   	  162.684 MiB / 188.377 MiB, 86%, 1.292 MiB/s, ETA 19s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m7.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 86% /188.377Mi, 1.296Mi/s, 19sTransferred:   	  163.309 MiB / 188.377 MiB, 87%, 1.292 MiB/s, ETA 19s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m7.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 86% /188.377Mi, 1.296Mi/s, 19sTransferred:   	  163.996 MiB / 188.377 MiB, 87%, 1.297 MiB/s, ETA 18s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m8.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 87% /188.377Mi, 1.299Mi/s, 18sTransferred:   	  164.590 MiB / 188.377 MiB, 87%, 1.297 MiB/s, ETA 18s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m8.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 87% /188.377Mi, 1.299Mi/s, 18sTransferred:   	  165.340 MiB / 188.377 MiB, 88%, 1.298 MiB/s, ETA 17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m9.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 87% /188.377Mi, 1.300Mi/s, 17sTransferred:   	  165.902 MiB / 188.377 MiB, 88%, 1.298 MiB/s, ETA 17s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:       2m9.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 88% /188.377Mi, 1.300Mi/s, 17sTransferred:   	  166.465 MiB / 188.377 MiB, 88%, 1.297 MiB/s, ETA 16s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m10.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 88% /188.377Mi, 1.299Mi/s, 16sTransferred:   	  167.184 MiB / 188.377 MiB, 89%, 1.297 MiB/s, ETA 16s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m10.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 88% /188.377Mi, 1.299Mi/s, 16sTransferred:   	  167.902 MiB / 188.377 MiB, 89%, 1.298 MiB/s, ETA 15s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m11.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 89% /188.377Mi, 1.297Mi/s, 15sTransferred:   	  168.344 MiB / 188.377 MiB, 89%, 1.298 MiB/s, ETA 15s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m11.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 89% /188.377Mi, 1.297Mi/s, 15sTransferred:   	  169.027 MiB / 188.377 MiB, 90%, 1.287 MiB/s, ETA 15s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m12.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 89% /188.377Mi, 1.289Mi/s, 14sTransferred:   	  169.621 MiB / 188.377 MiB, 90%, 1.287 MiB/s, ETA 14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m13.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 90% /188.377Mi, 1.289Mi/s, 14sTransferred:   	  170.215 MiB / 188.377 MiB, 90%, 1.287 MiB/s, ETA 14s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m13.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 90% /188.377Mi, 1.284Mi/s, 14sTransferred:   	  170.934 MiB / 188.377 MiB, 91%, 1.288 MiB/s, ETA 13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m14.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 90% /188.377Mi, 1.284Mi/s, 13sTransferred:   	  171.527 MiB / 188.377 MiB, 91%, 1.288 MiB/s, ETA 13s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m14.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 91% /188.377Mi, 1.290Mi/s, 13sTransferred:   	  172.215 MiB / 188.377 MiB, 91%, 1.288 MiB/s, ETA 12s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m14.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 91% /188.377Mi, 1.290Mi/s, 12sTransferred:   	  172.934 MiB / 188.377 MiB, 92%, 1.288 MiB/s, ETA 11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m15.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 91% /188.377Mi, 1.289Mi/s, 11sTransferred:   	  173.652 MiB / 188.377 MiB, 92%, 1.297 MiB/s, ETA 11s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m16.1s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 92% /188.377Mi, 1.289Mi/s, 11sTransferred:   	  174.246 MiB / 188.377 MiB, 92%, 1.297 MiB/s, ETA 10s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m16.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 92% /188.377Mi, 1.291Mi/s, 10sTransferred:   	  174.809 MiB / 188.377 MiB, 93%, 1.297 MiB/s, ETA 10s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m16.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 92% /188.377Mi, 1.291Mi/s, 10sTransferred:   	  175.527 MiB / 188.377 MiB, 93%, 1.288 MiB/s, ETA 9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m17.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 93% /188.377Mi, 1.292Mi/s, 9sTransferred:   	      176 MiB / 188.377 MiB, 93%, 1.288 MiB/s, ETA 9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m17.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 93% /188.377Mi, 1.292Mi/s, 9sTransferred:   	  176.750 MiB / 188.377 MiB, 94%, 1.282 MiB/s, ETA 9s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m18.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 93% /188.377Mi, 1.288Mi/s, 9sTransferred:   	  177.309 MiB / 188.377 MiB, 94%, 1.282 MiB/s, ETA 8s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m18.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 94% /188.377Mi, 1.288Mi/s, 8sTransferred:   	  178.059 MiB / 188.377 MiB, 95%, 1.284 MiB/s, ETA 8s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m19.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 94% /188.377Mi, 1.287Mi/s, 8sTransferred:   	  178.684 MiB / 188.377 MiB, 95%, 1.289 MiB/s, ETA 7s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m20.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 94% /188.377Mi, 1.287Mi/s, 7sTransferred:   	  179.371 MiB / 188.377 MiB, 95%, 1.289 MiB/s, ETA 6s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m20.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 95% /188.377Mi, 1.289Mi/s, 6sTransferred:   	  179.934 MiB / 188.377 MiB, 96%, 1.289 MiB/s, ETA 6s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m20.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 95% /188.377Mi, 1.289Mi/s, 6sTransferred:   	  180.684 MiB / 188.377 MiB, 96%, 1.287 MiB/s, ETA 5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m21.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 95% /188.377Mi, 1.292Mi/s, 5sTransferred:   	  181.309 MiB / 188.377 MiB, 96%, 1.287 MiB/s, ETA 5s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m22.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 96% /188.377Mi, 1.292Mi/s, 5sTransferred:   	  181.934 MiB / 188.377 MiB, 97%, 1.294 MiB/s, ETA 4s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m22.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 96% /188.377Mi, 1.292Mi/s, 4sTransferred:   	  182.590 MiB / 188.377 MiB, 97%, 1.292 MiB/s, ETA 4s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m23.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 96% /188.377Mi, 1.292Mi/s, 4sTransferred:   	  183.215 MiB / 188.377 MiB, 97%, 1.292 MiB/s, ETA 3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m23.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 97% /188.377Mi, 1.293Mi/s, 3sTransferred:   	  183.902 MiB / 188.377 MiB, 98%, 1.292 MiB/s, ETA 3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m23.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 97% /188.377Mi, 1.293Mi/s, 3sTransferred:   	  184.469 MiB / 188.377 MiB, 98%, 1.293 MiB/s, ETA 3s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m24.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 97% /188.377Mi, 1.283Mi/s, 3sTransferred:   	  185.090 MiB / 188.377 MiB, 98%, 1.293 MiB/s, ETA 2s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m24.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 98% /188.377Mi, 1.283Mi/s, 2sTransferred:   	  185.809 MiB / 188.377 MiB, 99%, 1.287 MiB/s, ETA 1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m25.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 98% /188.377Mi, 1.288Mi/s, 1sTransferred:   	  186.434 MiB / 188.377 MiB, 99%, 1.287 MiB/s, ETA 1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m25.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 98% /188.377Mi, 1.288Mi/s, 1sTransferred:   	  186.996 MiB / 188.377 MiB, 99%, 1.292 MiB/s, ETA 1s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m26.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 99% /188.377Mi, 1.294Mi/s, 1sTransferred:   	  187.746 MiB / 188.377 MiB, 100%, 1.292 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m26.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz: 99% /188.377Mi, 1.294Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.291 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m27.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:100% /188.377Mi, 1.295Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.291 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m28.0s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:100% /188.377Mi, 1.295Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.250 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m28.5s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:100% /188.377Mi, 1.234Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.250 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m28.9s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:100% /188.377Mi, 1.234Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.172 MiB/s, ETA 0s
+Checks:                 0 / 0, -, Listed 1
+Transferred:            0 / 1, 0%
+Elapsed time:      2m29.4s
+Transferring:
+ *             MacInTosh_Archive_20250714.tar.gz:100% /188.377Mi, 1.157Mi/s, 0sTransferred:   	  188.377 MiB / 188.377 MiB, 100%, 1.172 MiB/s, ETA 0s
+Checks:                 1 / 1, 100%, Listed 1
+Deleted:                1 (files), 0 (dirs), 188.377 MiB (freed)
+Renamed:                1
+Transferred:            1 / 1, 100%
+Elapsed time:      2m29.9s
+[2025-07-14 18:27:07.535102] 
+--- CLOUD PURGE PROTOCOL COMPLETE ---
