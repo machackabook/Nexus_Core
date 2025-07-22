@@ -5,13 +5,13 @@
 	<key>EmbeddedEditorHidden:nexus</key>
 	<false/>
 	<key>ExpandedEditorWidth:nexus:displays([(0, 0), (1440, 900)])</key>
-	<integer>860</integer>
+	<integer>645</integer>
 	<key>ExpandedItems:nexus</key>
 	<array>
-		<string>51D2F44B-3F6F-4E6E-85B5-38209BC7E961</string>
+		<string>D483769D-D23E-43B1-8C95-3822367FB65E</string>
 	</array>
 	<key>FileFilterMode:nexus</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>OpenDocuments:nexus</key>
 	<array>
 		<dict>
@@ -43,7 +43,7 @@
 			<key>HasSecurityScope</key>
 			<true/>
 			<key>RelativePath</key>
-			<string>./Project Chimera- The Nexus Chronicle.html</string>
+			<string>../../Desktop/Project Chimera- The Nexus Chronicle.html</string>
 			<key>TypeID</key>
 			<string>_CFileLocator</string>
 			<key>Version</key>
@@ -53,13 +53,56 @@
 	<key>OpenDocumentsExpanded</key>
 	<true/>
 	<key>OpenDocumentsSplitterProportion</key>
-	<real>-0.0023255813953488857</real>
+	<real>0.096904441453566581</real>
 	<key>ProjectItemsExpanded</key>
 	<true/>
 	<key>ProjectViewVisible</key>
-	<false/>
+	<true/>
 	<key>RecentItems:nexus</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Date</key>
+			<date>2025-07-18T12:21:07Z</date>
+			<key>Location</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vawwDAAAAAAQQMAAAAPKOPzNoN7dRwEWz7LdNFu5I
+				i1thB4Cir470P5BwO32p/AEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAG5leHVzAAAABwAA
+				AAEBAABEZXNrdG9wACkAAAABAQAAUHJvamVjdCBDaGlt
+				ZXJhLSBUaGUgTmV4dXMgQ2hyb25pY2xlLmh0bWwAAAAQ
+				AAAAAQYAABAAAAAgAAAAMAAAAEAAAAAIAAAABAMAALFj
+				AAAAAAAACAAAAAQDAACOiAAAAAAAAAgAAAAEAwAAk4gA
+				AAAAAAAIAAAABAMAAMF3IQAAAAAAEAAAAAEGAACMAAAA
+				nAAAAKwAAAC8AAAACAAAAAAEAABBxxPpqLxLohgAAAAB
+				AgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
+				AAACAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
+				ZTovLy8EAAAAAQEAAEF1cmEIAAAABAMAAABgR/gNAAAA
+				CAAAAAAEAABBwd5EgAAAACQAAAABAQAARTM4OUI1OUQt
+				MThBNC00NjEzLTg2M0MtODhCMDEwRjI1MDE2GAAAAAEC
+				AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEA
+				AC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
+				dElkZW50aWZpZXJLZXkAAAQAAAADAwAAsigAANgAAAD+
+				////AQAAAAAAAAARAAAABBAAAHQAAAAAAAAABRAAAMwA
+				AAAAAAAAEBAAAPQAAAAAAAAAQBAAAOQAAAAAAAAAAiAA
+				ALgBAAAAAAAABSAAADABAAAAAAAAECAAAEABAAAAAAAA
+				ESAAAGwBAAAAAAAAEiAAAEwBAAAAAAAAEyAAAFwBAAAA
+				AAAAICAAAJgBAAAAAAAAMCAAAMQBAAAAAAAAAcAAABQB
+				AAAAAAAAEcAAACAAAAAAAAAAEsAAACQBAAAAAAAAENAA
+				AAQAAAAAAAAAzAEAgPABAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/nexus/Desktop/Project%20Chimera-%20The%20Nexus%20Chronicle.html</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</array>
 	<key>ScratchpadItemsExpanded</key>
 	<true/>
 	<key>ScratchpadItemsVisible</key>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Gaia - The Nexus Generation (iOS)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            overflow: hidden;
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        #mainCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        .ios-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+
+        .ios-controls {
+            position: fixed;
+            bottom: calc(20px + env(safe-area-inset-bottom));
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            pointer-events: auto;
+        }
+
+        .ios-button {
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        .ios-button:active {
+            transform: scale(0.95);
+            background: rgba(100, 255, 218, 0.2);
+        }
+
+        .ios-status {
+            position: fixed;
+            top: calc(20px + env(safe-area-inset-top));
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 15px;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            pointer-events: auto;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .ios-button {
+                padding: 18px 36px;
+            }
+        }
+
+        .ios-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .ios-progress {
+            width: 80%;
+            max-width: 300px;
+            height: 4px;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 2px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .ios-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #64ffda;
+            transition: width 0.3s ease;
+        }
+
+        .ios-loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .ios-gestures {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mainCanvas"></canvas>
+    
+    <div class="ios-overlay">
+        <div class="ios-status">
+            <div>Section: <span id="sectionStatus">1/5</span></div>
+        </div>
+        
+        <div class="ios-controls">
+            <button class="ios-button" id="prevButton">Previous</button>
+            <button class="ios-button" id="nextButton">Next</button>
+        </div>
+    </div>
+    
+    <div class="ios-loading" id="loadingScreen">
+        <h1>Gaia - The Nexus Generation</h1>
+        <div class="ios-progress">
+            <div class="ios-progress-bar" id="progressBar"></div>
+        </div>
+        <div id="loadingStatus">Initializing...</div>
+    </div>
+
+    <script>
+        // iOS-optimized presentation code here
+        class GaiaNexusIOS {
+            constructor() {
+                this.init();
+            }
+
+            async init() {
+                this.setupCanvas();
+                this.setupGestures();
+                await this.loadAssets();
+                this.startAnimation();
+            }
+
+            setupCanvas() {
+                this.canvas = document.getElementById('mainCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                
+                const updateSize = () => {
+                    const scale = window.devicePixelRatio || 1;
+                    this.canvas.width = window.innerWidth * scale;
+                    this.canvas.height = window.innerHeight * scale;
+                    this.ctx.scale(scale, scale);
+                };
+                
+                window.addEventListener('resize', updateSize);
+                updateSize();
+            }
+
+            setupGestures() {
+                let startX = 0;
+                let startY = 0;
+
+                this.canvas.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                });
+
+                this.canvas.addEventListener('touchmove', (e) => {
+                    e.preventDefault();
+                });
+
+                this.canvas.addEventListener('touchend', (e) => {
+                    const deltaX = e.changedTouches[0].clientX - startX;
+                    const deltaY = e.changedTouches[0].clientY - startY;
+                    
+                    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                        if (deltaX > 50) {
+                            this.previousSection();
+                        } else if (deltaX < -50) {
+                            this.nextSection();
+                        }
+                    }
+                });
+            }
+
+            async loadAssets() {
+                const steps = ['Initializing...', 'Loading assets...', 'Preparing canvas...', 'Configuring gestures...', 'Ready'];
+                const progressBar = document.getElementById('progressBar');
+                const loadingStatus = document.getElementById('loadingStatus');
+
+                for (let i = 0; i < steps.length; i++) {
+                    loadingStatus.textContent = steps[i];
+                    progressBar.style.width = \`\${((i + 1) / steps.length) * 100}%\`;
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                }
+
+                document.getElementById('loadingScreen').classList.add('hidden');
+            }
+
+            // Additional methods would go here
+        }
+
+        // Initialize when document is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new GaiaNexusIOS();
+        });
+    </script>
+</body>
+</html>
+    <script>
+        // Handoff Integration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('handoff-worker.js');
+        }
+        
+        // Enable Handoff functionality
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden') {
+                // Save state for Handoff
+                localStorage.setItem('handoffState', JSON.stringify({
+                    section: currentSection,
+                    timestamp: Date.now()
+                }));
+            }
+        });
+    </script>

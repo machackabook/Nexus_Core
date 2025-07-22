@@ -1,0 +1,22 @@
+{
+    "main_interface": {
+        "protocol": "https",
+        "host": "localhost",
+        "port": 443,
+        "ssl": true
+    },
+    "internal_services": {
+        "colab": {
+            "internal_port": 3000,
+            "path": "/colab"
+        },
+        "network": {
+            "internal_port": 3001,
+            "path": "/network"
+        },
+        "monitor": {
+            "internal_port": 3002,
+            "path": "/monitor"
+        }
+    }
+}

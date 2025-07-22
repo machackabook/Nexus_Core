@@ -1,0 +1,15 @@
+{
+  "name": "gemini",
+  "version": "0.1.0",
+  "description": "Integration with Google's Gemini 2.5 Pro model",
+  "author": "Nexus User",
+  "main": "gemini.go",
+  "commands": [
+    {
+      "name": "gemini",
+      "description": "Interact with Google's Gemini 2.5 Pro model",
+      "aliases": ["gem"]
+    }
+  ],
+  "dependencies": []
+}
