@@ -1,0 +1,945 @@
+OneWifi[7465]: config.utapi s_sysevent_connect: open new sysevent fd 73 
+	2025/5/27 21:35:09	Notice 
+
+[OneWifi][7465]:  Wifi VAP is set to down 
+	2025/5/27 16:11:01	Notice 
+
+[OneWifi][7465]:   WiFi radio radio2 is set to UP 
+	2025/5/27 16:11:01	Notice 
+
+[OneWifi][7465]:  Wifi VAP is set to down 
+	2025/5/27 16:11:00	Notice 
+
+[OneWifi][7465]:   WiFi radio radio1 is set to UP 
+	2025/5/27 16:11:00	Notice 
+
+[OneWifi][7465]:   WiFi radio radio2 is set to UP 
+	2025/5/27 16:10:40	Notice 
+
+[OneWifi][7465]:  Wifi VAP is set to down 
+	2025/5/27 16:10:37	Notice 
+
+[OneWifi][7465]:   WiFi radio radio1 is set to UP 
+	2025/5/27 16:10:37	Notice 
+
+[OneWifi][7465]:   WiFi radio radio2 is set to UP 
+	2025/5/27 16:10:34	Notice 
+
+[OneWifi][7465]:  Wifi VAP is set to down 
+	2025/5/27 16:10:32	Notice 
+
+[OneWifi][7465]:   WiFi radio radio1 is set to UP 
+	2025/5/27 16:10:32	Notice 
+
+OneWifi[7951]: config.utapi s_sysevent_connect: open new sysevent fd 73 
+	2025/5/25 01:42:39	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:31:05	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:31:05	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:31:03	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:31:03	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:31:01	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:31:01	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:30:59	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:59	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:57	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:55	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:53	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:52	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:49	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:47	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:19	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:30:16	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:16	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:11	Notice 
+
+[OneWifi][7951]:  Wifi VAP is set to down 
+	2025/5/20 23:30:09	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:09	Notice 
+
+[OneWifi][7951]:  Wifi VAP Changed to UP 
+	2025/5/20 23:30:06	Notice 
+
+[OneWifi][7951]:   WiFi radio radio2 is set to UP 
+	2025/5/20 23:30:06	Notice 
+
+[OneWifi][7951]:  Wifi VAP Changed to UP 
+	2025/5/20 23:30:04	Notice 
+
+[OneWifi][7951]:   WiFi radio radio1 is set to UP 
+	2025/5/20 23:30:04	Notice 
+
+OneWifi[7545]: config.utapi s_sysevent_connect: open new sysevent fd 74 
+	2025/5/18 05:39:03	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:03:59	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:59	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:03:58	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:58	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:03:48	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:48	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:03:47	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:47	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:45	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:43	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:41	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:39	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:37	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:35	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:05	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:03:02	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:03:02	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:03:00	Notice 
+
+[OneWifi][7545]:  Wifi VAP is set to down 
+	2025/5/15 02:02:57	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:02:57	Notice 
+
+[OneWifi][7545]:  Wifi VAP Changed to UP 
+	2025/5/15 02:02:55	Notice 
+
+[OneWifi][7545]:   WiFi radio radio2 is set to UP 
+	2025/5/15 02:02:55	Notice 
+
+[OneWifi][7545]:  Wifi VAP Changed to UP 
+	2025/5/15 02:02:54	Notice 
+
+[OneWifi][7545]:   WiFi radio radio1 is set to UP 
+	2025/5/15 02:02:54	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:43:48	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:48	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:43:46	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:43:46	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:43:44	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:44	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:43:42	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:43:42	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:40	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:43:38	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:36	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:43:34	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:32	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:43:30	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:43:02	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:42:58	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:42:58	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:42:55	Notice 
+
+[OneWifi][7557]:  Wifi VAP is set to down 
+	2025/5/14 02:42:53	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:42:53	Notice 
+
+[OneWifi][7557]:  Wifi VAP Changed to UP 
+	2025/5/14 02:42:50	Notice 
+
+[OneWifi][7557]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:42:50	Notice 
+
+[OneWifi][7557]:  Wifi VAP Changed to UP 
+	2025/5/14 02:42:48	Notice 
+
+[OneWifi][7557]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:42:48	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:20:25	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:20:25	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:20:23	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:20:23	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:17:24	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:17:24	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:17:22	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:17:22	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:17:20	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:17:18	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:17:17	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:17:15	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:17:13	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:17:12	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:16:44	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:16:40	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:16:40	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:16:37	Notice 
+
+[OneWifi][7558]:  Wifi VAP is set to down 
+	2025/5/14 02:16:34	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:16:34	Notice 
+
+[OneWifi][7558]:  Wifi VAP Changed to UP 
+	2025/5/14 02:16:32	Notice 
+
+[OneWifi][7558]:   WiFi radio radio2 is set to UP 
+	2025/5/14 02:16:32	Notice 
+
+[OneWifi][7558]:  Wifi VAP Changed to UP 
+	2025/5/14 02:16:30	Notice 
+
+[OneWifi][7558]:   WiFi radio radio1 is set to UP 
+	2025/5/14 02:16:30	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/13 23:23:25	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/13 23:23:24	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/13 23:23:24	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/13 23:23:22	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/13 23:23:21	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/13 23:23:21	Notice 
+
+[Wifi][6594]:  KeyPassphrase Changed    
+	2025/5/6 17:33:32	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/6 17:33:32	Notice 
+
+[Wifi][6594]:  KeyPassphrase Changed    
+	2025/5/6 17:33:31	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/6 17:33:31	Notice 
+
+OneWifi[6594]: config.utapi s_sysevent_connect: open new sysevent fd 73 
+	2025/5/6 11:59:38	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/1 13:38:19	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/1 13:38:19	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/1 13:38:17	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/1 13:38:17	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/1 13:37:58	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/1 13:37:56	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/1 13:37:56	Notice 
+
+[Wifi][6594]:   WiFi radio radio2 is set to UP 
+	2025/5/1 13:37:53	Notice 
+
+[Wifi][6594]:  Wifi VAP is set to down 
+	2025/5/1 13:37:51	Notice 
+
+[Wifi][6594]:   WiFi radio radio1 is set to UP 
+	2025/5/1 13:37:51	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:42:10	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:42:10	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:42:08	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:42:08	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:48	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:41:46	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:46	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:44	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:41:42	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:42	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:41:37	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:37	Notice 
+
+[Wifi][6618]:  Wifi VAP is set to down 
+	2025/5/1 12:41:31	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:31	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:28	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:27	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:26	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:25	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:24	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:23	Notice 
+
+[Wifi][6618]:  Wifi VAP Changed to UP 
+	2025/5/1 12:41:17	Notice 
+
+[Wifi][6618]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:41:17	Notice 
+
+[Wifi][6618]:  Wifi VAP Changed to UP 
+	2025/5/1 12:41:16	Notice 
+
+[Wifi][6618]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:41:16	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:16:37	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:16:37	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:16:34	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:16:34	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:16:14	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:16:12	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:16:12	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:16:11	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:16:09	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:16:09	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:15:55	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:15:55	Notice 
+
+[Wifi][6600]:  Wifi VAP is set to down 
+	2025/5/1 12:15:54	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:15:54	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:15:53	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:15:52	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:15:51	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:15:50	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:15:49	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:15:48	Notice 
+
+[Wifi][6600]:  Wifi VAP Changed to UP 
+	2025/5/1 12:15:43	Notice 
+
+[Wifi][6600]:   WiFi radio radio2 is set to UP 
+	2025/5/1 12:15:43	Notice 
+
+[Wifi][6600]:  Wifi VAP Changed to UP 
+	2025/5/1 12:15:42	Notice 
+
+[Wifi][6600]:   WiFi radio radio1 is set to UP 
+	2025/5/1 12:15:42	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/6/23 02:28:58	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:58	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/6/23 02:28:57	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:57	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:54	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:53	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:50	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:49	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:47	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:45	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:09	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/6/23 02:28:06	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:06	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:04	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/6/23 02:28:02	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:28:02	Notice 
+
+[OneWifi][7615]:  Wifi VAP Changed to UP 
+	2025/6/23 02:28:00	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:28:00	Notice 
+
+[OneWifi][7615]:  Wifi VAP Changed to UP 
+	2025/6/23 02:27:58	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:27:58	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:14:53	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:14:53	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:14:52	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:14:52	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:14:42	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:14:42	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:14:41	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:14:41	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:14:37	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:14:36	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:14:34	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:14:32	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:14:29	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:14:26	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:13:54	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:13:52	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:13:52	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:13:49	Notice 
+
+[OneWifi][7460]:  Wifi VAP is set to down 
+	2025/6/23 02:13:47	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:13:47	Notice 
+
+[OneWifi][7460]:  Wifi VAP Changed to UP 
+	2025/6/23 02:13:43	Notice 
+
+[OneWifi][7460]:   WiFi radio radio2 is set to UP 
+	2025/6/23 02:13:43	Notice 
+
+[OneWifi][7460]:  Wifi VAP Changed to UP 
+	2025/6/23 02:13:42	Notice 
+
+[OneWifi][7460]:   WiFi radio radio1 is set to UP 
+	2025/6/23 02:13:42	Notice 
+
+[OneWifi][7465]:   WiFi radio radio2 is set to UP 
+	2025/6/17 04:24:31	Notice 
+
+[OneWifi][7465]:   WiFi radio radio1 is set to UP 
+	2025/6/17 04:24:29	Notice 
+
+[OneWifi][7571]:  Wifi VAP is set to down 
+	2025/7/17 10:10:44	Notice 
+
+[OneWifi][7571]:   WiFi radio radio2 is set to UP 
+	2025/7/17 10:10:44	Notice 
+
+[OneWifi][7571]:  Wifi VAP is set to down 
+	2025/7/17 10:10:43	Notice 
+
+[OneWifi][7571]:   WiFi radio radio1 is set to UP 
+	2025/7/17 10:10:43	Notice 
+
+[OneWifi][7571]:   WiFi radio radio2 is set to UP 
+	2025/7/17 10:10:03	Notice 
+
+[OneWifi][7571]:  Wifi VAP is set to down 
+	2025/7/17 10:10:00	Notice 
+
+[OneWifi][7571]:   WiFi radio radio1 is set to UP 
+	2025/7/17 10:10:00	Notice 
+
+[OneWifi][7571]:   WiFi radio radio2 is set to UP 
+	2025/7/17 10:09:56	Notice 
+
+[OneWifi][7571]:  Wifi VAP is set to down 
+	2025/7/17 10:09:53	Notice 
+
+[OneWifi][7571]:   WiFi radio radio1 is set to UP 
+	2025/7/17 10:09:53	Notice 
+
+OneWifi[7554]: config.utapi s_sysevent_connect: open new sysevent fd 59 
+	2025/7/12 17:03:55	Notice 
+
+[OneWifi][7554]:  Wifi VAP is set to down 
+	2025/7/11 02:17:26	Notice 
+
+[OneWifi][7554]:   WiFi radio radio2 is set to UP 
+	2025/7/11 02:17:26	Notice 
+
+[OneWifi][7554]:  Wifi VAP is set to down 
+	2025/7/11 02:17:25	Notice 
+
+[OneWifi][7554]:   WiFi radio radio1 is set to UP 
+	2025/7/11 02:17:25	Notice 
+
+[OneWifi][7554]:   WiFi radio radio2 is set to UP 
+	2025/7/11 02:16:43	Notice 
+
+[OneWifi][7554]:  Wifi VAP is set to down 
+	2025/7/11 02:16:41	Notice 
+
+[OneWifi][7554]:   WiFi radio radio1 is set to UP 
+	2025/7/11 02:16:41	Notice 
+
+[OneWifi][7554]:   WiFi radio radio2 is set to UP 
+	2025/7/11 02:16:38	Notice 
+
+[OneWifi][7554]:  Wifi VAP is set to down 
+	2025/7/11 02:16:37	Notice 
+
+[OneWifi][7554]:   WiFi radio radio1 is set to UP 
+	2025/7/11 02:16:37	Notice 
+
+[OneWifi][7554]:  Wifi VAP Changed to UP 
+	2025/7/11 02:16:34	Notice 
+
+[OneWifi][7554]:   WiFi radio radio2 is set to UP 
+	2025/7/11 02:16:34	Notice 
+
+[OneWifi][7554]:  Wifi VAP Changed to UP 
+	2025/7/11 02:16:32	Notice 
+
+[OneWifi][7554]:   WiFi radio radio1 is set to UP 
+	2025/7/11 02:16:32	Notice 
+
+[OneWifi][7537]:  Wifi VAP is set to down 
+	2025/7/2 17:22:48	Notice 
+
+[OneWifi][7537]:   WiFi radio radio2 is set to UP 
+	2025/7/2 17:22:48	Notice 
+
+[OneWifi][7537]:  Wifi VAP is set to down 
+	2025/7/2 17:22:47	Notice 
+
+[OneWifi][7537]:   WiFi radio radio1 is set to UP 
+	2025/7/2 17:22:47	Notice 
+
+[OneWifi][7537]:   WiFi radio radio2 is set to UP 
+	2025/7/2 17:22:09	Notice 
+
+[OneWifi][7537]:  Wifi VAP is set to down 
+	2025/7/2 17:22:08	Notice 
+
+[OneWifi][7537]:   WiFi radio radio1 is set to UP 
+	2025/7/2 17:22:08	Notice 
+
+[OneWifi][7537]:   WiFi radio radio2 is set to UP 
+	2025/7/2 17:22:05	Notice 
+
+[OneWifi][7537]:  Wifi VAP is set to down 
+	2025/7/2 17:22:03	Notice 
+
+[OneWifi][7537]:   WiFi radio radio1 is set to UP 
+	2025/7/2 17:22:03	Notice 
+
+[OneWifi][7537]:  Wifi VAP Changed to UP 
+	2025/7/2 17:21:45	Notice 
+
+[OneWifi][7537]:   WiFi radio radio2 is set to UP 
+	2025/7/2 17:21:45	Notice 
+
+[OneWifi][7537]:  Wifi VAP Changed to UP 
+	2025/7/2 17:21:43	Notice 
+
+[OneWifi][7537]:   WiFi radio radio1 is set to UP 
+	2025/7/2 17:21:43	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/7/1 03:15:53	Notice 
+
+[OneWifi][7615]:   WiFi radio radio2 is set to UP 
+	2025/7/1 03:15:53	Notice 
+
+[OneWifi][7615]:  Wifi VAP is set to down 
+	2025/7/1 03:15:47	Notice 
+
+[OneWifi][7615]:   WiFi radio radio1 is set to UP 
+	2025/7/1 03:15:47	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:35	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:35	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:34	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:46:34	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:18	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:17	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:46:17	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:15	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:13	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:46:13	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:12	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:12	Notice 
+
+[Wifi][6583]:  Wifi VAP is set to down 
+	2025/4/28 07:46:11	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:46:11	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:09	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:46:05	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:46:01	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:45:55	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:45:54	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:45:53	Notice 
+
+[Wifi][6583]:  Wifi VAP Changed to UP 
+	2025/4/28 07:45:47	Notice 
+
+[Wifi][6583]:  Wifi VAP Changed to UP 
+	2025/4/28 07:45:47	Notice 
+
+[Wifi][6583]:   WiFi radio radio2 is set to UP 
+	2025/4/28 07:45:47	Notice 
+
+[Wifi][6583]:   WiFi radio radio1 is set to UP 
+	2025/4/28 07:45:47	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 21:00:34	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 21:00:34	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 21:00:32	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 21:00:32	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 21:00:03	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 21:00:02	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 21:00:02	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:59	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 20:59:57	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:57	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 20:59:55	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:55	Notice 
+
+[Wifi][6609]:  Wifi VAP is set to down 
+	2025/4/22 20:59:53	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:53	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:49	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:44	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:37	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:32	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:31	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:29	Notice 
+
+[Wifi][6609]:  Wifi VAP Changed to UP 
+	2025/4/22 20:59:26	Notice 
+
+[Wifi][6609]:   WiFi radio radio2 is set to UP 
+	2025/4/22 20:59:26	Notice 
+
+[Wifi][6609]:  Wifi VAP Changed to UP 
+	2025/4/22 20:59:25	Notice 
+
+[Wifi][6609]:   WiFi radio radio1 is set to UP 
+	2025/4/22 20:59:25	Notice 
+

@@ -1,0 +1,6 @@
+    {
+        "name": "Open Gaia Nexus",
+        "description": "Open Gaia Nexus presentation",
+        "type": "url",
+        "url": "gaia-nexus://open?section={{section}}"
+    }
