@@ -1,0 +1,6 @@
+{
+  "sender": "machackabook-primary",
+  "target": "all_nodes",
+  "command": "RECONCILE_STATE",
+  "timestamp": "2026-07-23T18:00:56Z"
+}
