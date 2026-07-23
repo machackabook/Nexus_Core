@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+export PYTHONPATH="$GAIA_ROOT:$PYTHONPATH"
+python3 -m gaia.nexus.bridge "$@"
