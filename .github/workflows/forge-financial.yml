@@ -1,0 +1,33 @@
+name: Forge Financial Compute
+
+on:
+  push:
+    branches: [main, forge-financial-compute-v1]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  compute:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run deterministic opportunity scan
+        run: |
+          python3 forge/financial/arbitrage_engine.py forge/financial/sample_quotes.json --out /tmp/arbitrage-report.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open('/tmp/arbitrage-report.json'))
+          assert r['mode']=='analysis_only'
+          assert r['capital_required'] is False
+          assert r['opportunities']
+          print('validated opportunities:', len(r['opportunities']))
+          PY
+      - name: Secret-pattern guard
+        run: |
+          ! grep -RInE '(sk_live_|sk_test_|ghp_[A-Za-z0-9_]+|AKIA[0-9A-Z]{16})' . --exclude-dir=.git

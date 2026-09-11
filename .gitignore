@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
 logs/*.log
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+artifacts/*.json
+artifacts/*.jsonl

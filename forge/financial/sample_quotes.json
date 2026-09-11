@@ -1,0 +1,5 @@
+[
+  {"venue":"VENUE_A","asset":"ASSET-X","bid":99.00,"ask":100.00,"fee_bps":10},
+  {"venue":"VENUE_B","asset":"ASSET-X","bid":101.00,"ask":102.00,"fee_bps":10},
+  {"venue":"VENUE_C","asset":"ASSET-X","bid":100.20,"ask":100.40,"fee_bps":5}
+]
