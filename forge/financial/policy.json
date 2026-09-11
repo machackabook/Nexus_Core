@@ -1,0 +1,11 @@
+{
+  "schema": "nexus.finance.policy.v1",
+  "mode": "analysis_only",
+  "execution_enabled": false,
+  "withdrawals_enabled": false,
+  "minimum_net_spread_bps": 25,
+  "default_slippage_bps": 10,
+  "require_provenance": true,
+  "require_audit_record": true,
+  "production_execution_requires_explicit_review": true
+}
