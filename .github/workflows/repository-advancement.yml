@@ -1,0 +1,43 @@
+name: Repository Advancement Guardrail
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: advancement-${{ github.repository }}
+  cancel-in-progress: false
+jobs:
+  advance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Boundary and integrity audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .gaia/reports
+          if git ls-files | grep -E '(^|/)(\.env|.*\.pem|.*\.key|.*\.p12|.*\.sparsebundle)(/|$)'; then
+            echo 'Sensitive material is tracked.'
+            exit 1
+          fi
+          {
+            echo '# Nexus Core Advancement Evidence'
+            echo
+            echo "Generated: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "Commit: $(git rev-parse HEAD)"
+            echo "Tracked files: $(git ls-files | wc -l | tr -d ' ')"
+            echo
+            echo 'Priority lanes: integrity, provenance, reproducibility, recovery, interoperability.'
+            echo 'Policy: no destructive automation; no credential generation; no enclave contents.'
+          } > .gaia/reports/latest.md
+          git config user.name 'gaia-advancement-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .gaia/reports/latest.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh advancement evidence'
+            git push
+          fi
