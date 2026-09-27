@@ -1,0 +1,19 @@
+name: NexusFactoryIOSSmoke
+options:
+  bundleIdPrefix: com.singularity.nexus
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: 15.0
+targets:
+  NexusFactoryIOSSmoke:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [Sources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.singularity.nexus.factory.ios
+        CODE_SIGNING_ALLOWED: NO
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
