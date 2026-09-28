@@ -1,0 +1,45 @@
+name: Factory / Apple
+on:
+  pull_request:
+    paths: ["factory/ios-smoke/**","factory/toolchain.json",".github/workflows/factory-apple.yml"]
+  push:
+    branches: [main]
+    paths: ["factory/ios-smoke/**","factory/toolchain.json",".github/workflows/factory-apple.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  apple:
+    runs-on: macos-26
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: factory/ios-smoke
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer
+          xcodebuild -version
+          swift --version
+      - name: XcodeGen
+        run: |
+          brew list xcodegen >/dev/null 2>&1 || brew install xcodegen
+          xcodegen --version
+      - run: xcodegen generate
+      - name: Build unsigned simulator app
+        run: |
+          xcodebuild -project NexusFactoryIOSSmoke.xcodeproj -scheme NexusFactoryIOSSmoke -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO clean build
+      - name: Package + hash
+        run: |
+          APP="$(find "$HOME/Library/Developer/Xcode/DerivedData" -type d -path '*Build/Products/Debug-iphonesimulator/NexusFactoryIOSSmoke.app' -print -quit)"
+          test -n "$APP"
+          mkdir -p build/artifact
+          ditto -c -k --sequesterRsrc --keepParent "$APP" build/artifact/NexusFactoryIOSSmoke.app.zip
+          shasum -a 256 build/artifact/NexusFactoryIOSSmoke.app.zip | tee build/artifact/APPLE-APP-SHA256.txt
+          printf 'platform=ios-simulator\nxcode=26.6\nsigning=disabled\ncommit=%s\n' "$GITHUB_SHA" > build/artifact/BUILD-MANIFEST.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nexus-factory-apple
+          path: factory/ios-smoke/build/artifact/*
+          if-no-files-found: error
