@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+PY="${PYTHON:-python3}"
+ADAPTER="$ROOT/gaia/nexus/providers/colab_gemini.py"
+if [[ ! -f "$ADAPTER" ]]; then
+  printf '[NEXUS][ERR] Colab Gemini adapter missing: %s\n' "$ADAPTER" >&2
+  exit 66
+fi
+exec "$PY" "$ADAPTER" "$@"
