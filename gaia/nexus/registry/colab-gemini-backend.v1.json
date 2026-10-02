@@ -1,0 +1,71 @@
+{
+  "schema": "nexus.memory-registry.integration.v1",
+  "integration_id": "NEXUS-GEMINI-COLAB-2026-10-02",
+  "state": "INTEGRATION_SUBSTRATE",
+  "canonical_lineage": {
+    "parent_catalog_id": "CAT-2026-00012",
+    "parent_name": "geminicliEmbeddings.ipynb.txt",
+    "parent_source_id": "1XeQzcGsCquC5Vob0hFAnhjLydC3iQEL0",
+    "rationale": "Reuse the registered Gemini notebook lineage instead of creating an unrelated provider branch."
+  },
+  "transport": {
+    "provider": "gemini",
+    "route": "Nexus/SYNAPSE -> ssh Host colab -> /root/nexus/bin/gemini-backend -> Gemini generateContent",
+    "request": "stdin",
+    "response": "JSON",
+    "credential_boundary": "Colab environment/secret store",
+    "hardcoded_secret_in_registry": false
+  },
+  "implementations": [
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "gaia/nexus/providers/colab_gemini.py",
+      "commit": "3e6afb4848989143ac548bbe349bb500043c4170"
+    },
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "bin/nexus-gemini-colab",
+      "commit": "5493fca63341795b6d10e2d1d1ee99083204b4bf"
+    },
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "gaia/nexus/bridge.py",
+      "commit": "701a8a07d0cfc12b543d4bfabab33fea8ffe1afa"
+    },
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "notebooks/Nexus_Gemini_Colab_Backend.ipynb",
+      "commit": "6beff200ae464940aa6df60618aaa14936249841"
+    },
+    {
+      "repo": "machackabook/Gemini-Nexus-OS",
+      "path": "services/colabGeminiService.ts",
+      "commit": "44e569171c60b15690f2c04f005cbc7d4628ae31"
+    },
+    {
+      "repo": "machackabook/Gemini-Nexus-OS",
+      "path": "services/geminiService.ts",
+      "commit": "232ca648fe82a0fedf1e05535abb73e798306970"
+    },
+    {
+      "repo": "machackabook/Gaia-The-Nexus-Generation",
+      "path": "infra/providers/colab-gemini.json",
+      "commit": "dd534af5957442284c40f916fd96105af03abd83"
+    }
+  ],
+  "notebook": {
+    "github_path": "machackabook/Nexus_Core/notebooks/Nexus_Gemini_Colab_Backend.ipynb",
+    "drive_file_id": "1v0uTtzchqRKwhI-bSSBV5mGhJ9YqOVud",
+    "drive_parent_id": "1MPnQF9kB5o2XNeE8y2yFNSxM-sbuZRu7",
+    "drive_parent_title": "Colab Notebooks",
+    "drive_validation": "STAGED_NOT_RUNTIME_VERIFIED"
+  },
+  "evidence_policy": {
+    "require_live_backend_smoke_test": true,
+    "expected_smoke_text": "NEXUS_COLAB_GEMINI_OK",
+    "response_sha256": true,
+    "duration_ms": true,
+    "exit_code": true,
+    "promote_only_after_adam_verify": true
+  }
+}
