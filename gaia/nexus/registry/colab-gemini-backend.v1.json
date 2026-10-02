@@ -14,7 +14,13 @@
     "request": "stdin",
     "response": "JSON",
     "credential_boundary": "Colab environment/secret store",
-    "hardcoded_secret_in_registry": false
+    "hardcoded_secret_in_registry": false,
+    "local_http_gateway": {
+      "bind_default": "127.0.0.1",
+      "port_default": 8765,
+      "health": "GET /health",
+      "generate": "POST /v1/gemini/generate"
+    }
   },
   "implementations": [
     {
@@ -51,6 +57,16 @@
       "repo": "machackabook/Gaia-The-Nexus-Generation",
       "path": "infra/providers/colab-gemini.json",
       "commit": "dd534af5957442284c40f916fd96105af03abd83"
+    },
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "gaia/nexus/gateway.py",
+      "commit": "26815efee4d32f4e5d3d191d4d07358bf0af2f3d"
+    },
+    {
+      "repo": "machackabook/Nexus_Core",
+      "path": "bin/nexus-ai-gateway",
+      "commit": "44ce04d6aa615f157ca4a8fb23f17475d6e38bd5"
     }
   ],
   "notebook": {
