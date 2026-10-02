@@ -1,0 +1,68 @@
+{
+  "schema": "nexus.drive-colab.multiaccount.v1",
+  "state": "STAGED_VERIFIED_ACCESS",
+  "shared_colab_folder": {
+    "id": "1Y5mop-PKPICwpFonfFdnsly_z1yfLz2G",
+    "title": "Colab Notebooks",
+    "original_accessible_connected_identities": 4,
+    "note": "Five additional connected Drive identities were granted writer access to canonical bridge files individually."
+  },
+  "bridge_folder": {
+    "id": "1dop1rde__lPexMz8jYnPIGLgHHfDQoSQ",
+    "title": "NEXUS_MULTIACCOUNT_BRIDGE"
+  },
+  "canonical_files": [
+    {
+      "key": "great_assimilation_cloud_purge",
+      "id": "1NOd-M9EtzLh8puQq2S98UPK3avEUZCyH",
+      "title": "Great_Assimilation_Cloud_Purge_v2.ipynb",
+      "mime": "application/vnd.google.colaboratory",
+      "source_created": "2025-07-16T06:30:19.880Z"
+    },
+    {
+      "key": "nexus_generation",
+      "id": "1HQuv92qVIiWdyvVRdYh5H07AjHqWtixi",
+      "title": "The_Nexus_Generation.ipynb",
+      "mime": "application/vnd.google.colaboratory",
+      "source_created": "2025-07-21T16:54:08.542Z"
+    },
+    {
+      "key": "gemini_backend",
+      "id": "1mJPDWyUtXSIxoWHLQWc8TyYEZJVmNp2j",
+      "title": "Nexus_Gemini_Colab_Backend.ipynb",
+      "mime": "application/x-ipynb+json"
+    },
+    {
+      "key": "coherence_record",
+      "id": "1hnXsw4WXZdpAsLbR4DmwX5-spJidmOpV",
+      "title": "quantum_coherence_record.json",
+      "mime": "application/json"
+    },
+    {
+      "key": "coherence_expand",
+      "id": "1DFWBAgRPnJIbngEO579GoxaoANomb8A8",
+      "title": "quantum_coherence_expand.sh",
+      "mime": "application/x-shellscript"
+    },
+    {
+      "key": "coherence_cron",
+      "id": "1KpVit_u5q-3dzAsd_ASa8qnT7GCvnPRY",
+      "title": "quantum_coherence_cron.sh",
+      "mime": "application/x-shellscript"
+    }
+  ],
+  "verification": {
+    "connected_drive_identities_checked": 9,
+    "great_assimilation_accessible_from_connected_identities": 9,
+    "january_through_june_2025_colab_notebooks_found": 0,
+    "verified_shared_colab_epoch": "2025-07",
+    "destructive_artifacts_auto_execute": false
+  },
+  "policy": {
+    "google_connector_credentials_exported_to_colab": false,
+    "strategy": "shared-file federation + active Colab identity OAuth",
+    "pull_default": true,
+    "push_requires_explicit_call": true,
+    "receipt_hash": "sha256"
+  }
+}
