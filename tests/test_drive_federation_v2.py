@@ -55,8 +55,8 @@ class DriveFederationPureTests(unittest.TestCase):
             "cells": [{
                 "cell_type": "code",
                 "source": [
-                    "GEMINI_API_KEY = 'AIza" + ("A" * 35) + "'\\n",
-                    "print('safe')\\n",
+                    "GEMINI_API_KEY = 'AIza" + ("A" * 35) + "'\n",
+                    "print('safe')\n",
                 ],
             }]
         }
@@ -74,8 +74,8 @@ class DriveFederationPureTests(unittest.TestCase):
             "cells": [{
                 "cell_type": "code",
                 "source": [
-                    f"GEMINI_API_KEY = '{secret}'\\n",
-                    "print('safe')\\n",
+                    f"GEMINI_API_KEY = '{secret}'\n",
+                    "print('safe')\n",
                 ],
                 "outputs": [{"text": [secret]}],
             }],

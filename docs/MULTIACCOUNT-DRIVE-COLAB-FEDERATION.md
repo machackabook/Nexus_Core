@@ -1,6 +1,6 @@
 # GAIA / NEXUS — Multi-Account Drive ↔ Colab Federation
 
-**Release:** 2.1.0  
+**Release:** 2.2.0  
 **Repository:** machackabook/Nexus_Core  
 **State:** implementation committed; live Colab execution remains pending  
 **Lineage:** Bibliothèque / ADAM registry → CAT-2026-00012 (Gemini notebook lineage)
@@ -50,7 +50,7 @@ For each candidate it records file ID, name, MIME type, createdTime, modifiedTim
 
 ## Full-scope and redaction behavior
 
-The default scan inspects all candidates discovered from the active principal's visible user corpus, shared-drive corpus, configured shared roots, and indexed full-text matches. It does not silently stop at the former 1,200-file inspection cap. Set max_inspect_files in the private Colab Secret only when an intentional bounded pass is needed. The report marks a bounded pass with inspection_limit_reached=true.
+The default scan inspects all candidates discovered from the active principal's visible user corpus, shared-drive corpus, configured shared roots, and indexed full-text matches. Configured folder roots are traversed breadth-first with no default depth cap; the visited-folder set prevents repeated traversal. An explicit `max_depth` can be supplied only for an intentionally bounded pass. It does not silently stop at the former 1,200-file inspection cap. Set max_inspect_files in the private Colab Secret only when an intentional bounded pass is needed. The report marks a bounded pass with inspection_limit_reached=true.
 
 The default per-file download ceiling is 50,000,000 bytes. Files above that ceiling, unsupported Google-native exports, permission failures, or malformed notebooks are retained in the inventory with an inspection-failure state and warning rather than silently omitted. The report separately records user-corpus and shared-drive metadata completeness, incompleteSearch, pagination-limit warnings, and configured-root access.
 
@@ -111,6 +111,6 @@ When this secret is absent, the notebook searches for a folder named NEXUS_MULTI
 ## Verification status
 
 - Notebook JSON structure: independently parsed from the committed GitHub files in this session; both notebooks are nbformat 4 with correctly separated source lines.
-- Python module compilation and deterministic unit tests: committed but not executed here. GitHub Actions created failed jobs with no step records or downloadable logs, so no passing CI result is claimed.
+- Python module compilation and deterministic unit tests: committed but not executed by GitHub Actions. The latest validation jobs completed as failures before runner assignment (`runner_id=0`, zero steps); no test step or downloadable job log was produced, so no passing CI result is claimed.\n- Static notebook validation: PASS — both notebooks parse as nbformat 4; 15-cell bridge notebook and 5-cell Gemini notebook; all cell sources are line arrays; no literal escaped-line-ending defect; bridge module reference resolves to the immutable module/test commit.
 - Live Drive enumeration, cross-owner access, Gemini API execution, and SSH proxy execution: not claimed until the notebook is run in an authenticated Colab runtime.
 - The earlier nine-identity connector visibility result is retained as historical evidence only.

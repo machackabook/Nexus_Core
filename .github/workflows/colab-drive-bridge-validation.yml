@@ -5,7 +5,7 @@ on:
       - "gaia/nexus/drive_federation_v2.py"
       - "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb"
       - "notebooks/Nexus_Gemini_Colab_Backend.ipynb"
-      - "tests/test_drive_federation_v2.py"
+      - "tests/test_drive_federation_v2.py"\n      - "docs/MULTIACCOUNT-DRIVE-COLAB-FEDERATION.md"\n      - "gaia/nexus/registry/multiaccount-drive-colab.v2.json"
       - ".github/workflows/colab-drive-bridge-validation.yml"
   pull_request:
     paths:
