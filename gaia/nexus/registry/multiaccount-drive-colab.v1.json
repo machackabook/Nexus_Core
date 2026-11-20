@@ -1,62 +1,7 @@
 {
-  "schema": "nexus.drive-colab.multiaccount.v2",
-  "state": "IMPLEMENTATION_COMMITTED_RUNTIME_PENDING",
-  "authority": {
-    "repository": "machackabook/Nexus_Core",
-    "parent_catalog_record": "CAT-2026-00012",
-    "doctrine": [
-      "Nothing executes beyond its time.",
-      "Nothing claims capacity without measurement.",
-      "Nothing claims correctness without verification."
-    ]
-  },
-  "implementation": {
-    "version": "2.0.0",
-    "module": "gaia/nexus/drive_federation_v2.py",
-    "notebook": "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb",
-    "gemini_notebook": "notebooks/Nexus_Gemini_Colab_Backend.ipynb",
-    "documentation": "docs/MULTIACCOUNT-DRIVE-COLAB-FEDERATION.md",
-    "tests": "tests/test_drive_federation_v2.py",
-    "workflow": ".github/workflows/colab-drive-bridge-validation.yml"
-  },
-  "historical_observations": {
-    "connected_drive_identities_reported": 9,
-    "earlier_session_shared_colab_folder_visible_to": 4,
-    "earlier_session_bridge_notebook_reported_visible_to": 9,
-    "great_assimilation_cloud_purge_drive_created_time": "2025-07-16",
-    "nexus_generation_drive_created_time": "2025-07-21",
-    "quantum_coherence_files_drive_created_time": "2025-07-22",
-    "jan_jun_2025_native_colab_search_result": 0,
-    "phi_or_phil_exact_title_found": false,
-    "related_candidate": "quantum_coherence/{record.json,expand.sh,cron.sh}",
-    "limitation": "These are prior-session connector observations, not a fresh scan. Drive createdTime is not original source authorship time."
-  },
-  "federation_model": {
-    "strategy": "shared-folder federation through one active Colab OAuth principal",
-    "chatgpt_oauth_tokens_exported_to_colab": false,
-    "account_credentials_cloned": false,
-    "requires_each_source_root_shared_to_active_colab_principal": true,
-    "active_colab_oauth_sessions": 1,
-    "expected_connected_drive_identities_historical": 9,
-    "configured_source_roots_secret": "NEXUS_DRIVE_BRIDGE_CONFIG_JSON",
-    "active_identity_email_exported": false
-  },
-  "security": {
-    "private_drive_file_ids_embedded_in_current_public_registry": false,
-    "source_ids_and_root_ids": "Colab Secrets or private Drive config only",
-    "api_keys_committed": false,
-    "gemini_secret_name": "GEMINI_API_KEY",
-    "imported_code_autoexecuted": false,
-    "default_push": "new version into Drive outbox",
-    "in_place_replace": "explicit only; expected SHA-256 + verified backup; optimistic and not atomic"
-  },
-  "evidence": {
-    "notebook_json_validation": "repository CI",
-    "python_compile_and_unit_tests": "repository CI",
-    "live_drive_scan": "NOT_RUN_IN_THIS_CHAT_SESSION",
-    "cross_account_runtime_access": "PENDING_COLAB_RUN",
-    "live_gemini_smoke_test": "PENDING_COLAB_RUN",
-    "ssh_proxy_test": "PENDING_COLAB_RUN",
-    "full_jan_jun_2025_historical_completeness": "NOT_ESTABLISHED"
-  }
+  "schema": "nexus.drive-colab.multiaccount.v1",
+  "state": "SUPERSEDED",
+  "superseded_by": "gaia/nexus/registry/multiaccount-drive-colab.v2.json",
+  "note": "The v1 public registry contained private Drive file locators. The current tree has been redacted; earlier Git commits retain historical copies. Drive IDs are locators, not authentication credentials.",
+  "historical_status": "Prior-session connector observations only; not a fresh scan."
 }
