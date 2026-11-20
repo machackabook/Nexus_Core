@@ -92,6 +92,14 @@ def notebook_projection(payload: dict[str, Any]) -> list[dict[str, str]]:
         })
     return projection
 
+
+def sanitized_notebook_projection(payload: dict[str, Any]) -> list[dict[str, str]]:
+    """Return report-safe cell source while leaving byte/source hashes unchanged."""
+    return [
+        {"cell_type": cell["cell_type"], "source": redact_secrets(cell["source"])}
+        for cell in notebook_projection(payload)
+    ]
+
 def analyze_source(source: str, name: str = "") -> dict[str, Any]:
     text = (name + "\n" + source).lower()
     matches: dict[str, list[str]] = {}
@@ -125,9 +133,11 @@ class HashChain:
             rows = self.path.read_text(encoding="utf-8").splitlines()
             if rows:
                 previous = json.loads(rows[-1])["receipt_sha256"]
+        with self.path.open("r", encoding="utf-8") as handle:
+            sequence = sum(1 for _ in handle)
         body = {
             "schema": "nexus.receipt.v1",
-            "sequence": sum(1 for _ in self.path.open("r", encoding="utf-8")),
+            "sequence": sequence,
             "timestamp_unix_ms": int(time.time() * 1000),
             "event": event,
             "previous_receipt_sha256": previous,
@@ -173,7 +183,7 @@ class DriveFederation:
         "capabilities(canEdit,canDownload),driveId,shortcutDetails(targetId,targetMimeType)"
     )
 
-    def __init__(self, service: Any, workspace: str | Path, max_download_bytes: int = 25_000_000):
+    def __init__(self, service: Any, workspace: str | Path, max_download_bytes: int = 50_000_000):
         self.service = service
         self.workspace = Path(workspace)
         self.workspace.mkdir(parents=True, exist_ok=True)
@@ -183,7 +193,7 @@ class DriveFederation:
         self.corpus_status: dict[str, str] = {}
         self.incomplete_search: dict[str, bool] = {}
 
-    def _list_query(self, query: str, corpora: str = "user", page_limit: int = 100) -> list[dict[str, Any]]:
+    def _list_query(self, query: str, corpora: str = "user", page_limit: int = 1000) -> list[dict[str, Any]]:
         found: list[dict[str, Any]] = []
         token = None
         pages = 0
@@ -224,9 +234,18 @@ class DriveFederation:
         return list(unique.values())
 
     def list_children(self, folder_id: str) -> list[dict[str, Any]]:
-        return self._list_query(
-            f"'{folder_id}' in parents and trashed = false", corpora="user"
-        )
+        query = f"'{folder_id}' in parents and trashed = false"
+        try:
+            return self._list_query(query, corpora="allDrives")
+        except Exception as all_drives_error:
+            try:
+                self.warnings.append(
+                    f"folder listing fell back to user corpus for {folder_id}: "
+                    f"{type(all_drives_error).__name__}"
+                )
+                return self._list_query(query, corpora="user")
+            except Exception:
+                raise
 
     def walk_folder(self, folder_id: str, label: str, max_depth: int = 8) -> tuple[list[dict[str, Any]], dict[str, str]]:
         collected: dict[str, dict[str, Any]] = {}
@@ -283,7 +302,7 @@ class DriveFederation:
         meta = self.get_metadata(file_id)
         data, _ = self.download_bytes(meta)
         safe_name = Path(filename or meta.get("name") or file_id).name
-        target = self.workspace / "downloads" / safe_name
+        target = self.workspace / "downloads" / f"{file_id}_{safe_name}"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
         digest = sha256_bytes(data)
@@ -324,14 +343,22 @@ class DriveFederation:
             text = ""
             if meta.get("mimeType") in NOTEBOOK_MIMES or str(meta.get("name", "")).lower().endswith(".ipynb"):
                 payload = json.loads(data.decode("utf-8-sig"))
-                projection = notebook_projection(payload)
+                raw_projection = notebook_projection(payload)
+                projection = [
+                    {"cell_type": cell["cell_type"], "source": redact_secrets(cell["source"])}
+                    for cell in raw_projection
+                ]
                 text = "\n".join(cell["source"] for cell in projection)
                 record["notebook"] = {
                     "nbformat": payload.get("nbformat"),
                     "nbformat_minor": payload.get("nbformat_minor"),
                     "cell_count": len(projection),
                     "code_cell_count": sum(1 for cell in projection if cell["cell_type"] == "code"),
-                    "source_projection_sha256": sha256_bytes(canonical_json_bytes(projection)),
+                    "source_projection_sha256": sha256_bytes(canonical_json_bytes(raw_projection)),
+                    "secret_redaction_applied": any(
+                        safe["source"] != raw["source"]
+                        for safe, raw in zip(projection, raw_projection)
+                    ),
                     "cells": projection,
                 }
                 record["normalized_sha256"] = record["notebook"]["source_projection_sha256"]
@@ -358,7 +385,7 @@ class DriveFederation:
         self,
         terms: Iterable[str] = DEFAULT_TERMS,
         root_ids: Iterable[dict[str, str] | str] = (),
-        max_inspect_files: int = 1200,
+        max_inspect_files: int | None = None,
     ) -> dict[str, Any]:
         terms = tuple(terms)
         metadata = {item["id"]: item for item in self.list_all_files()}
@@ -408,9 +435,12 @@ class DriveFederation:
                 candidates.append(item)
 
         candidates.sort(key=lambda x: (x.get("createdTime", ""), x.get("name", "").lower()))
+        inspection_candidates = (
+            candidates if max_inspect_files is None else candidates[:max_inspect_files]
+        )
         inspected = [
             self.inspect_file(item, root_labels.get(item["id"]))
-            for item in candidates[:max_inspect_files]
+            for item in inspection_candidates
         ]
         for row in inspected:
             row["query_matched_terms"] = sorted(matched.get(row["file_id"], set()))
@@ -486,8 +516,17 @@ class DriveFederation:
                     (row.get("created_time") for row in inspected if row.get("created_time")),
                     default=None,
                 ),
-                "inspection_limit_reached": len(candidates) > max_inspect_files,
-                "metadata_scan_complete_for_user_corpus": self.corpus_status.get("user") == "AVAILABLE" and not self.incomplete_search.get("user", False),
+                "inspection_limit_reached": (
+                    max_inspect_files is not None and len(candidates) > max_inspect_files
+                ),
+                "metadata_scan_complete_for_user_corpus": (
+                    self.corpus_status.get("user") == "AVAILABLE"
+                    and not self.incomplete_search.get("user", False)
+                ),
+                "metadata_scan_complete_for_all_drives": (
+                    self.corpus_status.get("allDrives") == "AVAILABLE"
+                    and not self.incomplete_search.get("allDrives", False)
+                ),
                 "corpora_status": self.corpus_status,
                 "incomplete_search": self.incomplete_search,
                 "earliest_colab_created_time": min(
@@ -544,6 +583,10 @@ class DriveFederation:
             file_count=len(report.get("artifacts", [])),
             registry_sha256=sha256_bytes(paths["registry"].read_bytes()),
         )
+        # Export a snapshot of the chain after registry generation. Its own
+        # subsequent Drive-upload receipt is intentionally recorded locally,
+        # not recursively embedded into the snapshot being uploaded.
+        paths["receipts"] = self.receipts.path
         return paths
 
     def upload_new_version(self, local_path: str | Path, folder_id: str, name: str | None = None) -> dict[str, Any]:
