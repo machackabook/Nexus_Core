@@ -11,13 +11,28 @@
     ]
   },
   "implementation": {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "module": "gaia/nexus/drive_federation_v2.py",
     "notebook": "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb",
     "gemini_notebook": "notebooks/Nexus_Gemini_Colab_Backend.ipynb",
     "documentation": "docs/MULTIACCOUNT-DRIVE-COLAB-FEDERATION.md",
     "tests": "tests/test_drive_federation_v2.py",
-    "workflow": ".github/workflows/colab-drive-bridge-validation.yml"
+    "workflow": ".github/workflows/colab-drive-bridge-validation.yml",
+    "release_changes": [
+      "Notebook source is redacted before export; original source-projection digest is retained for identity.",
+      "Default candidate inspection is unbounded; optional cap is explicit and reported.",
+      "Shared-drive folder traversal attempts allDrives and falls back to user corpus with a warning.",
+      "Per-file downloads are bounded at 50,000,000 bytes by default.",
+      "Pulled filenames are prefixed by Drive file ID to prevent same-name overwrites.",
+      "Receipt ledger snapshot is included in the outbox report set.",
+      "Colab notebook pins the federation module to an immutable Git commit."
+    ],
+    "commits": {
+      "gaia/nexus/drive_federation_v2.py": "76b3b737ff8d5ea9222c642bc4a132ea71e79f8d",
+      "tests/test_drive_federation_v2.py": "a8263e9e833f0f5d850c0d703d88c89f2ec7d403",
+      "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb": "72ba9b883d2231d5effe55f90fddd1870492c7c3",
+      "docs/MULTIACCOUNT-DRIVE-COLAB-FEDERATION.md": "ae8c05e575f71705258045713351aca7a66fd471"
+    }
   },
   "historical_observations": {
     "connected_drive_identities_reported": 9,
@@ -40,7 +55,10 @@
     "expected_connected_drive_identities_historical": 9,
     "configured_source_roots_secret": "NEXUS_DRIVE_BRIDGE_CONFIG_JSON",
     "active_identity_email_exported": false,
-    "coverage_rule": "Only files visible to the active Colab principal or explicitly shared roots can be inventoried."
+    "coverage_rule": "Only files visible to the active Colab principal or explicitly shared roots can be inventoried.",
+    "config_secret": "NEXUS_DRIVE_BRIDGE_CONFIG_JSON",
+    "default_scan_scope": "all visible user corpus + allDrives corpus + configured shared roots + indexed fullText candidates",
+    "default_candidate_inspection_limit": null
   },
   "private_data_handling": {
     "private_drive_file_ids_in_current_registry": false,
@@ -55,16 +73,26 @@
     "imported_code_autoexecuted": false,
     "default_push": "new version into Drive outbox",
     "in_place_replace": "explicit only; expected SHA-256 + verified backup; optimistic and not atomic",
-    "no_chatgpt_oauth_export": true
+    "no_chatgpt_oauth_export": true,
+    "notebook_source_redaction": "Applied to notebook source included in exported records; raw byte SHA-256 and raw source-projection SHA-256 retained as identity values only.",
+    "full_candidate_scan_default": true,
+    "max_download_bytes_default": 50000000
   },
   "evidence": {
     "github_head": "af0074e2a02e38905d9d472c2677dce6137296da",
-    "notebook_json_validation": "PASS — both committed notebooks parsed as nbformat 4; source arrays checked for the earlier literal escaped-line defect",
-    "python_compile_and_unit_tests": "NOT_EXECUTED — GitHub Actions jobs failed before exposing steps or downloadable logs",
-    "live_drive_scan": "NOT_RUN_IN_THIS_CHAT_SESSION — Google Drive connector disabled by administrator",
-    "cross_account_runtime_access": "PENDING_COLAB_RUN",
-    "live_gemini_smoke_test": "PENDING_COLAB_RUN",
+    "notebook_json_validation": "PASS — nbformat 4; 15 cells; line-array source; module reference pinned to immutable commit.",
+    "python_compile_and_unit_tests": "PENDING_GITHUB_ACTIONS — no passing run claimed.",
+    "live_drive_scan": "NOT_RUN — Google Drive connector disabled in current ChatGPT session; Colab runtime execution required.",
+    "cross_account_runtime_access": "PENDING_COLAB_RUN — active Colab principal must be granted access to each source root.",
+    "live_gemini_smoke_test": "PENDING_COLAB_RUN — uses GEMINI_API_KEY from Colab Secrets; key supplied in chat should be rotated.",
     "ssh_proxy_test": "PENDING_COLAB_RUN",
-    "full_jan_jun_2025_historical_completeness": "NOT_ESTABLISHED"
+    "full_jan_jun_2025_historical_completeness": "NOT_ESTABLISHED — Drive createdTime is metadata and current search is not a full export of every account.",
+    "github_implementation_commits": {
+      "gaia/nexus/drive_federation_v2.py": "76b3b737ff8d5ea9222c642bc4a132ea71e79f8d",
+      "tests/test_drive_federation_v2.py": "a8263e9e833f0f5d850c0d703d88c89f2ec7d403",
+      "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb": "72ba9b883d2231d5effe55f90fddd1870492c7c3",
+      "docs/MULTIACCOUNT-DRIVE-COLAB-FEDERATION.md": "ae8c05e575f71705258045713351aca7a66fd471"
+    },
+    "static_secret_redaction_regression_test": "COMMITTED — execution pending CI."
   }
 }
