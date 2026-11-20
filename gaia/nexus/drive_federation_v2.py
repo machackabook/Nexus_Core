@@ -20,7 +20,6 @@ DEFAULT_TERMS = (
 NOTEBOOK_MIMES = {
     "application/vnd.google.colaboratory",
     "application/x-ipynb+json",
-    "application/json",
 }
 TEXT_SUFFIXES = {
     ".ipynb", ".py", ".sh", ".json", ".md", ".txt", ".html", ".htm",
@@ -166,6 +165,11 @@ class DriveFederation:
         "parents,shared,webViewLink,md5Checksum,size,"
         "capabilities(canEdit,canDownload),driveId,shortcutDetails(targetId,targetMimeType))"
     )
+    FILE_FIELDS = (
+        "id,name,mimeType,createdTime,modifiedTime,owners(emailAddress),"
+        "parents,shared,webViewLink,md5Checksum,size,"
+        "capabilities(canEdit,canDownload),driveId,shortcutDetails(targetId,targetMimeType)"
+    )
 
     def __init__(self, service: Any, workspace: str | Path, max_download_bytes: int = 25_000_000):
         self.service = service
@@ -236,7 +240,7 @@ class DriveFederation:
     def get_metadata(self, file_id: str) -> dict[str, Any]:
         return self.service.files().get(
             fileId=file_id,
-            fields=self.FIELDS.replace("nextPageToken,incompleteSearch,", ""),
+            fields=self.FILE_FIELDS,
             supportsAllDrives=True,
         ).execute()
 
