@@ -1,0 +1,46 @@
+name: validate-colab-drive-federation
+on:
+  push:
+    paths:
+      - "gaia/nexus/drive_federation_v2.py"
+      - "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb"
+      - "notebooks/Nexus_Gemini_Colab_Backend.ipynb"
+      - "tests/test_drive_federation_v2.py"
+      - ".github/workflows/colab-drive-bridge-validation.yml"
+  pull_request:
+    paths:
+      - "gaia/nexus/drive_federation_v2.py"
+      - "notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb"
+      - "notebooks/Nexus_Gemini_Colab_Backend.ipynb"
+      - "tests/test_drive_federation_v2.py"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile bridge module
+        run: python -m compileall -q gaia/nexus/drive_federation_v2.py
+      - name: Run deterministic tests
+        run: python -m unittest discover -s tests -p "test_drive_federation_v2.py" -v
+      - name: Validate notebook JSON and source cells
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in [
+              Path("notebooks/Nexus_MultiAccount_Drive_Bridge.ipynb"),
+              Path("notebooks/Nexus_Gemini_Colab_Backend.ipynb"),
+          ]:
+              nb = json.loads(path.read_text(encoding="utf-8"))
+              assert nb["nbformat"] == 4
+              assert nb["cells"]
+              for cell in nb["cells"]:
+                  source = cell.get("source", "")
+                  if isinstance(source, list):
+                      source = "".join(source)
+                  assert "\\\\n" not in source, f"literal backslash-n found in {path}"
+              print(path, "VALID", len(nb["cells"]), "cells")
+          PY
