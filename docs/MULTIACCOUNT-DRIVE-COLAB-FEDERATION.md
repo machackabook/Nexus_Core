@@ -34,7 +34,7 @@ Known project candidates from that pass:
 - A Gemini Colab backend notebook and a later multi-account bridge notebook.
 - An exact notebook titled Phi/Phil Coherence Engine was not located. The quantum_coherence files are a supported related lineage candidate, not proof of the same artifact.
 
-The prior query returned no native Colab notebooks with Drive createdTime between 2025-01-01 and 2025-06-30. This was not a complete historical account export. Drive createdTime is metadata for the current Drive object and does not establish when the underlying source was first authored; copied/imported material can have newer timestamps.
+The prior query returned no native Colab notebooks with Drive createdTime between 2025-01-01 and 2025-06-30. This was not a complete historical account export. Drive createdTime is metadata for the current Drive object and does not establish when the underlying source was first authored; copied/imported material can have newer timestamps. The new scan also reports the Jan–Jun 2025 count for all relevant inspected artifacts, a month-by-month timeline, metadata-scan completeness, and whether the inspection cap was reached.
 
 ## Runtime discovery scope
 
@@ -43,7 +43,7 @@ The notebook searches:
 - all files visible in the active principal's Drive user corpus;
 - allDrives where the Drive API permits the query;
 - configured folder roots;
-- indexed fullText matches for Great Assimilation, Cloud Purge, Phi, Phil, coherence, quantum coherence, Nexus Generation, Gemini, GAIA, ADAM, SYNAPSE, Chimera, sparsebundle, and Colab;
+- indexed fullText matches for Great Assimilation, Cloud Purge, Phi, Phil, coherence, quantum coherence, Nexus Generation, Gemini, GAIA, ADAM, SYNAPSE, Chimera, sparsebundle, Colab, Macintosh, NEXUS_STAGING, core_functions, assimilated_archives, Aether, Gemini CLI, embeddings, Weaviate, and transfer;
 - all native Colab/IPYNB files visible to the principal.
 
 For each candidate it records file ID, name, MIME type, createdTime, modifiedTime, parents, owner aliases (one-way SHA-256 labels, not email addresses), byte size, exact SHA-256, normalized content SHA-256, notebook cell projection, and risk findings. Raw credentials and notebook outputs are not included in the public repository.
@@ -102,7 +102,7 @@ When this secret is absent, the notebook searches for a folder named NEXUS_MULTI
 
 ## Verification status
 
-- Notebook JSON structure: validated by the repository workflow.
-- Python module compilation and deterministic unit tests: validated by the repository workflow.
+- Notebook JSON structure: independently parsed from the committed GitHub files in this session; both notebooks are nbformat 4 with correctly separated source lines.
+- Python module compilation and deterministic unit tests: committed but not executed here. GitHub Actions created failed jobs with no step records or downloadable logs, so no passing CI result is claimed.
 - Live Drive enumeration, cross-owner access, Gemini API execution, and SSH proxy execution: not claimed until the notebook is run in an authenticated Colab runtime.
 - The earlier nine-identity connector visibility result is retained as historical evidence only.
