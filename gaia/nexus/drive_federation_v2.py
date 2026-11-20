@@ -15,7 +15,9 @@ SCHEMA_VERSION = "2.0.0"
 DEFAULT_TERMS = (
     "great assimilation", "cloud purge", "phi", "phil", "coherence",
     "quantum coherence", "nexus generation", "gemini", "gaia", "adam",
-    "synapse", "chimera", "sparsebundle", "colab",
+    "synapse", "chimera", "sparsebundle", "colab", "macintosh",
+    "nexus staging", "core functions", "assimilated archives", "aether",
+    "geminicli", "embeddings", "weaviate", "transfer",
 )
 NOTEBOOK_MIMES = {
     "application/vnd.google.colaboratory",
@@ -178,6 +180,8 @@ class DriveFederation:
         self.max_download_bytes = max_download_bytes
         self.receipts = HashChain(self.workspace / "receipts.jsonl")
         self.warnings: list[str] = []
+        self.corpus_status: dict[str, str] = {}
+        self.incomplete_search: dict[str, bool] = {}
 
     def _list_query(self, query: str, corpora: str = "user", page_limit: int = 100) -> list[dict[str, Any]]:
         found: list[dict[str, Any]] = []
@@ -195,12 +199,15 @@ class DriveFederation:
                 supportsAllDrives=True,
             )
             response = request.execute()
+            if response.get("incompleteSearch"):
+                self.incomplete_search[corpora] = True
             found.extend(response.get("files", []))
             token = response.get("nextPageToken")
             pages += 1
             if not token:
                 break
         if token:
+            self.incomplete_search[corpora] = True
             self.warnings.append(f"pagination limit reached for corpora={corpora}")
         return found
 
@@ -210,7 +217,9 @@ class DriveFederation:
             try:
                 for item in self._list_query("trashed = false", corpora=corpora):
                     unique[item["id"]] = item
+                self.corpus_status[corpora] = "AVAILABLE"
             except Exception as exc:
+                self.corpus_status[corpora] = "UNAVAILABLE"
                 self.warnings.append(f"corpora={corpora}: {type(exc).__name__}: {str(exc)[:180]}")
         return list(unique.values())
 
@@ -446,6 +455,16 @@ class DriveFederation:
             if (row.get("created_time") or "") >= "2025-01-01T00:00:00"
             and (row.get("created_time") or "") < "2025-07-01T00:00:00"
         ]
+        early_2025_artifacts = [
+            row for row in inspected
+            if (row.get("created_time") or "") >= "2025-01-01T00:00:00"
+            and (row.get("created_time") or "") < "2025-07-01T00:00:00"
+        ]
+        timeline = defaultdict(int)
+        for row in inspected:
+            created = str(row.get("created_time") or "")
+            if len(created) >= 7:
+                timeline[created[:7]] += 1
         risks = defaultdict(int)
         for row in inspected:
             for category in row.get("execution_review", {}).get("categories", []):
@@ -461,6 +480,16 @@ class DriveFederation:
                 "inspected_count": len(inspected),
                 "colab_notebook_count": len(colab_rows),
                 "jan_jun_2025_colab_count": len(early_2025),
+                "jan_jun_2025_relevant_artifact_count": len(early_2025_artifacts),
+                "relevant_artifact_timeline_by_month": dict(sorted(timeline.items())),
+                "earliest_relevant_artifact_created_time": min(
+                    (row.get("created_time") for row in inspected if row.get("created_time")),
+                    default=None,
+                ),
+                "inspection_limit_reached": len(candidates) > max_inspect_files,
+                "metadata_scan_complete_for_user_corpus": self.corpus_status.get("user") == "AVAILABLE" and not self.incomplete_search.get("user", False),
+                "corpora_status": self.corpus_status,
+                "incomplete_search": self.incomplete_search,
                 "earliest_colab_created_time": min(
                     (row.get("created_time") for row in colab_rows if row.get("created_time")),
                     default=None,
