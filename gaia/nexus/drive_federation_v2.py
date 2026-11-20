@@ -7,7 +7,7 @@ import json
 import re
 import time
 import unicodedata
-from collections import defaultdict
+from collections import defaultdict, deque
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -247,22 +247,38 @@ class DriveFederation:
             except Exception:
                 raise
 
-    def walk_folder(self, folder_id: str, label: str, max_depth: int = 8) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    def walk_folder(
+        self,
+        folder_id: str,
+        label: str,
+        max_depth: int | None = None,
+    ) -> tuple[list[dict[str, Any]], dict[str, str]]:
+        """Walk a shared folder tree breadth-first.
+
+        The default is exhaustive and has no depth cap. Set max_depth only
+        when an intentionally bounded traversal is required. A visited set
+        prevents repeated work if a folder is encountered more than once.
+        """
         collected: dict[str, dict[str, Any]] = {}
         labels: dict[str, str] = {}
         visited: set[str] = set()
+        queue = deque([(folder_id, 0)])
 
-        def visit(current_id: str, depth: int) -> None:
-            if current_id in visited or depth > max_depth:
-                return
+        while queue:
+            current_id, depth = queue.popleft()
+            if current_id in visited:
+                continue
             visited.add(current_id)
             for item in self.list_children(current_id):
-                collected[item["id"]] = item
-                labels[item["id"]] = label
-                if item.get("mimeType") == "application/vnd.google-apps.folder":
-                    visit(item["id"], depth + 1)
+                item_id = str(item.get("id", "")).strip()
+                if not item_id:
+                    continue
+                collected[item_id] = item
+                labels[item_id] = label
+                is_folder = item.get("mimeType") == "application/vnd.google-apps.folder"
+                if is_folder and (max_depth is None or depth < max_depth):
+                    queue.append((item_id, depth + 1))
 
-        visit(folder_id, 0)
         return list(collected.values()), labels
 
     def get_metadata(self, file_id: str) -> dict[str, Any]:
@@ -344,10 +360,7 @@ class DriveFederation:
             if meta.get("mimeType") in NOTEBOOK_MIMES or str(meta.get("name", "")).lower().endswith(".ipynb"):
                 payload = json.loads(data.decode("utf-8-sig"))
                 raw_projection = notebook_projection(payload)
-                projection = [
-                    {"cell_type": cell["cell_type"], "source": redact_secrets(cell["source"])}
-                    for cell in raw_projection
-                ]
+                projection = sanitized_notebook_projection(payload)
                 text = "\n".join(cell["source"] for cell in projection)
                 record["notebook"] = {
                     "nbformat": payload.get("nbformat"),

@@ -11,6 +11,7 @@ from gaia.nexus.drive_federation_v2 import (
     notebook_projection,
     redact_secrets,
     sanitized_notebook_projection,
+    DriveFederation,
     sha256_bytes,
 )
 
@@ -65,6 +66,72 @@ class DriveFederationPureTests(unittest.TestCase):
         self.assertNotIn("AIza", safe[0]["source"])
         self.assertIn("[REDACTED_SECRET]", safe[0]["source"])
         self.assertIn("print('safe')", safe[0]["source"])
+
+    def test_inspect_file_exports_only_redacted_notebook_source(self):
+        secret = "AIza" + ("A" * 35)
+        payload = {
+            "nbformat": 4,
+            "cells": [{
+                "cell_type": "code",
+                "source": [
+                    f"GEMINI_API_KEY = '{secret}'\\n",
+                    "print('safe')\\n",
+                ],
+                "outputs": [{"text": [secret]}],
+            }],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            federation = DriveFederation(service=None, workspace=tmp)
+            federation.download_bytes = lambda _meta: (
+                json.dumps(payload).encode("utf-8"),
+                "application/x-ipynb+json",
+            )
+            record = federation.inspect_file({
+                "id": "artifact-1",
+                "name": "private.ipynb",
+                "mimeType": "application/x-ipynb+json",
+            })
+        exported = json.dumps(record, ensure_ascii=False)
+        self.assertNotIn(secret, exported)
+        self.assertNotIn("AIza", exported)
+        self.assertIn("[REDACTED_SECRET]", exported)
+        self.assertTrue(record["notebook"]["secret_redaction_applied"])
+        self.assertNotIn(secret, record["content_excerpt"])
+
+    def test_folder_walk_has_no_default_depth_cap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            federation = DriveFederation(service=None, workspace=tmp)
+
+            def list_children(folder_id):
+                depth = int(folder_id)
+                if depth >= 12:
+                    return []
+                return [{
+                    "id": str(depth + 1),
+                    "mimeType": "application/vnd.google-apps.folder",
+                }]
+
+            federation.list_children = list_children
+            rows, labels = federation.walk_folder("0", "deep-root")
+        self.assertEqual(len(rows), 12)
+        self.assertEqual(set(labels.values()), {"deep-root"})
+
+    def test_folder_walk_supports_explicit_depth_limit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            federation = DriveFederation(service=None, workspace=tmp)
+
+            def list_children(folder_id):
+                depth = int(folder_id)
+                if depth >= 12:
+                    return []
+                return [{
+                    "id": str(depth + 1),
+                    "mimeType": "application/vnd.google-apps.folder",
+                }]
+
+            federation.list_children = list_children
+            rows, _ = federation.walk_folder("0", "bounded-root", max_depth=2)
+        self.assertEqual(len(rows), 3)
 
     def test_destructive_source_is_flagged_not_executed(self):
         result = analyze_source("import shutil\nshutil.rmtree('/tmp/archive')", "purge.py")
