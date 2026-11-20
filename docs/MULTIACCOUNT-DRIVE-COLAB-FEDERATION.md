@@ -1,13 +1,13 @@
 # GAIA / NEXUS — Multi-Account Drive ↔ Colab Federation
 
-**Release:** 2.0.0  
+**Release:** 2.1.0  
 **Repository:** machackabook/Nexus_Core  
 **State:** implementation committed; live Colab execution remains pending  
 **Lineage:** Bibliothèque / ADAM registry → CAT-2026-00012 (Gemini notebook lineage)
 
 ## Executive result
 
-This release replaces the earlier fragile notebook with a valid, self-contained Colab entrypoint backed by a reusable Python module. It inventories all Drive objects visible to the active Colab principal, follows configured shared roots, inspects Colab notebooks and relevant source artifacts, computes byte and normalized hashes, identifies exact/normalized duplicates, builds parent/duplicate lineage edges, flags execution-risk patterns without running imported code, writes a chained receipt ledger, and pushes new report versions into a Drive outbox.
+This release provides a valid Colab entrypoint backed by a reusable Python module. It inventories Drive metadata visible to the active Colab principal, follows configured shared roots (including shared-drive roots where the API permits), inspects every discovered relevant notebook/source candidate by default, computes byte and normalized hashes, identifies exact/normalized duplicates, builds parent/duplicate lineage edges, flags execution-risk patterns without running imported code, writes a chained receipt ledger, and pushes the complete report set—including a receipt-ledger snapshot—to a Drive outbox. Notebook source is secret-redacted before it is included in exported reports; the source-projection hash is calculated from the original unredacted source so identity remains stable without exporting credential values.
 
 ## Multi-account model: what is and is not federated
 
@@ -34,7 +34,7 @@ Known project candidates from that pass:
 - A Gemini Colab backend notebook and a later multi-account bridge notebook.
 - An exact notebook titled Phi/Phil Coherence Engine was not located. The quantum_coherence files are a supported related lineage candidate, not proof of the same artifact.
 
-The prior query returned no native Colab notebooks with Drive createdTime between 2025-01-01 and 2025-06-30. This was not a complete historical account export. Drive createdTime is metadata for the current Drive object and does not establish when the underlying source was first authored; copied/imported material can have newer timestamps. The new scan also reports the Jan–Jun 2025 count for all relevant inspected artifacts, a month-by-month timeline, metadata-scan completeness, and whether the inspection cap was reached.
+The prior query returned no native Colab notebooks with Drive createdTime between 2025-01-01 and 2025-06-30. This was not a complete historical account export. Drive createdTime is metadata for the current Drive object and does not establish when the underlying source was first authored; copied/imported material can have newer timestamps. The new scan also reports the Jan–Jun 2025 count for all relevant inspected artifacts, a month-by-month timeline, metadata-scan completeness for both user and shared-drive corpora, configured-root access, pagination warnings, and whether an optional inspection cap was reached. The default Colab configuration sets max_inspect_files to null, meaning every discovered candidate is inspected; a per-file download ceiling (default 50 MB) still protects the runtime.
 
 ## Runtime discovery scope
 
@@ -48,6 +48,14 @@ The notebook searches:
 
 For each candidate it records file ID, name, MIME type, createdTime, modifiedTime, parents, owner aliases (one-way SHA-256 labels, not email addresses), byte size, exact SHA-256, normalized content SHA-256, notebook cell projection, and risk findings. Raw credentials and notebook outputs are not included in the public repository.
 
+## Full-scope and redaction behavior
+
+The default scan inspects all candidates discovered from the active principal's visible user corpus, shared-drive corpus, configured shared roots, and indexed full-text matches. It does not silently stop at the former 1,200-file inspection cap. Set max_inspect_files in the private Colab Secret only when an intentional bounded pass is needed. The report marks a bounded pass with inspection_limit_reached=true.
+
+The default per-file download ceiling is 50,000,000 bytes. Files above that ceiling, unsupported Google-native exports, permission failures, or malformed notebooks are retained in the inventory with an inspection-failure state and warning rather than silently omitted. The report separately records user-corpus and shared-drive metadata completeness, incompleteSearch, pagination-limit warnings, and configured-root access.
+
+Notebook identity hashes are computed from original notebook cell source. Exported cell text is passed through credential-pattern redaction before it is placed in registry.json, inventory.jsonl, execution_review.json, or excerpts. This prevents known API-key/token patterns from being copied into the report. It is not a guarantee that every possible secret format is recognized; treat source archives as private and rotate credentials that were pasted into chats or public files.
+
 ## Evidence outputs
 
 The Colab run writes:
@@ -58,9 +66,9 @@ The Colab run writes:
 - duplicates.json
 - execution_review.json
 - account_summary.json
-- receipts.jsonl
+- receipts.jsonl (local append-only hash chain and uploaded snapshot)
 
-The receipt file is hash chained. Each entry contains sequence, timestamp, event, predecessor digest, data, and its own SHA-256. The chain detects modification of recorded receipts; it does not prove Google account ownership or source authorship.
+The receipt file is hash chained. Each entry contains sequence, timestamp, event, predecessor digest, data, and its own SHA-256. The uploaded ledger is a point-in-time snapshot made before the Drive API records the upload of that snapshot itself; that final upload receipt remains in the live Colab workspace ledger for the next export. The chain detects modification of recorded receipts; it does not prove Google account ownership or source authorship.
 
 ## Safe execution policy
 
