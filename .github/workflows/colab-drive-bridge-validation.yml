@@ -41,6 +41,8 @@ jobs:
                   source = cell.get("source", "")
                   if isinstance(source, list):
                       source = "".join(source)
-                  assert "\\\\n" not in source, f"literal backslash-n found in {path}"
+                  assert isinstance(cell.get("source"), list), f"source must be line array in {path}"
+                  for line in cell["source"]:
+                      assert not line.endswith(chr(92) + "n"), f"literal escaped line ending found in {path}"
               print(path, "VALID", len(nb["cells"]), "cells")
           PY
