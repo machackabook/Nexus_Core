@@ -10,6 +10,7 @@ from gaia.nexus.drive_federation_v2 import (
     normalize_text,
     notebook_projection,
     redact_secrets,
+    sanitized_notebook_projection,
     sha256_bytes,
 )
 
@@ -47,6 +48,23 @@ class DriveFederationPureTests(unittest.TestCase):
             }]
         }
         self.assertEqual(notebook_projection(a), notebook_projection(b))
+
+    def test_notebook_projection_redacts_secrets_in_reported_cells(self):
+        payload = {
+            "cells": [{
+                "cell_type": "code",
+                "source": [
+                    "GEMINI_API_KEY = 'AIza" + ("A" * 35) + "'\\n",
+                    "print('safe')\\n",
+                ],
+            }]
+        }
+        raw = notebook_projection(payload)
+        safe = sanitized_notebook_projection(payload)
+        self.assertIn("AIza", raw[0]["source"])
+        self.assertNotIn("AIza", safe[0]["source"])
+        self.assertIn("[REDACTED_SECRET]", safe[0]["source"])
+        self.assertIn("print('safe')", safe[0]["source"])
 
     def test_destructive_source_is_flagged_not_executed(self):
         result = analyze_source("import shutil\nshutil.rmtree('/tmp/archive')", "purge.py")
